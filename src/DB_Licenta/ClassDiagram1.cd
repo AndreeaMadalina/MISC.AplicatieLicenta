@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DB_Licenta.Models.Applicant">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAMAAAAAAAAACAACAQAQAAAAAAAQAAAAAAQAACAg=</HashCode>
+      <FileName>Models\Applicant.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DB_Licenta.Models.Customer">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAQAAAQAQAEAAAAAACAAAAAQAAAQA=</HashCode>
+      <FileName>Models\Customer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DB_Licenta.Models.DatabaseLicentaContext">
+    <Position X="11.5" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAEAAIAABAIAAAAAAGCQAAAAGAAAAAAAAAAYEAAAAQA=</HashCode>
+      <FileName>Models\DatabaseLicentaContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DB_Licenta.Models.Department">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAgAAAAAIAAAAACAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Models\Department.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DB_Licenta.Models.Employee">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAGAABAIAkACCAACAQAQAECACEAACAAAYAQAACQg=</HashCode>
+      <FileName>Models\Employee.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DB_Licenta.Models.Holiday">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAABAAAAAAAAAAAgCAAAAAAAAQAAAEAAAAA=</HashCode>
+      <FileName>Models\Holiday.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DB_Licenta.Models.Intern">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAIAAAAAAAAAAAAAASAAAgCAAAAAQAAAAAAEAAAAA=</HashCode>
+      <FileName>Models\Intern.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DB_Licenta.Models.Job">
+    <Position X="5.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAEAAAAAAAAAAACAAAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>Models\Job.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DB_Licenta.Models.Login">
+    <Position X="5.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAICAAAAAAAAAAAAAQAAAAAACAEAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Login.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DB_Licenta.Models.Priority">
+    <Position X="9.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAIAAAAAAI=</HashCode>
+      <FileName>Models\Priority.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DB_Licenta.Models.Project">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAMAAAAEAQAgAAAACAAAAAAgHAAAAAAAAAAIAEAAAAA=</HashCode>
+      <FileName>Models\Project.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DB_Licenta.Models.Registration">
+    <Position X="7.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAACAAAAkgAAAAAQAAAAEAACAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Registration.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DB_Licenta.Models.Task">
+    <Position X="0.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAEAAAAAAAEBAAQCAAADAgABAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Task.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,9 @@
+D:\WORK\Aplicatie Licenta\ClientLicenta_GUI\Model\bin\Debug\Model.dll
+D:\WORK\Aplicatie Licenta\ClientLicenta_GUI\Model\bin\Debug\Model.pdb
+D:\WORK\Aplicatie Licenta\ClientLicenta_GUI\Model\obj\Debug\Model.dll
+D:\WORK\Aplicatie Licenta\ClientLicenta_GUI\Model\obj\Debug\Model.pdb
+C:\Users\User\Desktop\CodeMetricsMSIC\Model\bin\Debug\Model.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\Model\bin\Debug\Model.pdb
+C:\Users\User\Desktop\CodeMetricsMSIC\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+C:\Users\User\Desktop\CodeMetricsMSIC\Model\obj\Debug\Model.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\Model\obj\Debug\Model.pdb

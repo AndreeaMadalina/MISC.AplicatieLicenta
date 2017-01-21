@@ -1,0 +1,29 @@
+C:\Users\Andreea Vulpe\Documents\Visual Studio 2013\Projects\ServerLicenta\DTO_Licenta\obj\Debug\DTO_Licenta.csprojResolveAssemblyReference.cache
+C:\Users\Andreea Vulpe\Documents\Visual Studio 2013\Projects\ServerLicenta\DTO_Licenta\bin\Debug\DTO_Licenta.dll.config
+C:\Users\Andreea Vulpe\Documents\Visual Studio 2013\Projects\ServerLicenta\DTO_Licenta\bin\Debug\DTO_Licenta.dll
+C:\Users\Andreea Vulpe\Documents\Visual Studio 2013\Projects\ServerLicenta\DTO_Licenta\bin\Debug\DTO_Licenta.pdb
+C:\Users\Andreea Vulpe\Documents\Visual Studio 2013\Projects\ServerLicenta\DTO_Licenta\bin\Debug\EntityFramework.dll
+C:\Users\Andreea Vulpe\Documents\Visual Studio 2013\Projects\ServerLicenta\DTO_Licenta\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Andreea Vulpe\Documents\Visual Studio 2013\Projects\ServerLicenta\DTO_Licenta\bin\Debug\EntityFramework.xml
+C:\Users\Andreea Vulpe\Documents\Visual Studio 2013\Projects\ServerLicenta\DTO_Licenta\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Andreea Vulpe\Documents\Visual Studio 2013\Projects\ServerLicenta\DTO_Licenta\obj\Debug\DTO_Licenta.dll
+C:\Users\Andreea Vulpe\Documents\Visual Studio 2013\Projects\ServerLicenta\DTO_Licenta\obj\Debug\DTO_Licenta.pdb
+D:\WORK\Aplicatie Licenta\ServerLicenta\DTO_Licenta\bin\Debug\DTO_Licenta.dll.config
+D:\WORK\Aplicatie Licenta\ServerLicenta\DTO_Licenta\bin\Debug\DTO_Licenta.dll
+D:\WORK\Aplicatie Licenta\ServerLicenta\DTO_Licenta\bin\Debug\DTO_Licenta.pdb
+D:\WORK\Aplicatie Licenta\ServerLicenta\DTO_Licenta\bin\Debug\EntityFramework.dll
+D:\WORK\Aplicatie Licenta\ServerLicenta\DTO_Licenta\bin\Debug\EntityFramework.SqlServer.dll
+D:\WORK\Aplicatie Licenta\ServerLicenta\DTO_Licenta\bin\Debug\EntityFramework.xml
+D:\WORK\Aplicatie Licenta\ServerLicenta\DTO_Licenta\bin\Debug\EntityFramework.SqlServer.xml
+D:\WORK\Aplicatie Licenta\ServerLicenta\DTO_Licenta\obj\Debug\DTO_Licenta.dll
+D:\WORK\Aplicatie Licenta\ServerLicenta\DTO_Licenta\obj\Debug\DTO_Licenta.pdb
+C:\Users\User\Desktop\CodeMetricsMSIC\DTO_Licenta\bin\Debug\DTO_Licenta.dll.config
+C:\Users\User\Desktop\CodeMetricsMSIC\DTO_Licenta\bin\Debug\DTO_Licenta.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\DTO_Licenta\bin\Debug\DTO_Licenta.pdb
+C:\Users\User\Desktop\CodeMetricsMSIC\DTO_Licenta\bin\Debug\EntityFramework.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\DTO_Licenta\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\DTO_Licenta\bin\Debug\EntityFramework.xml
+C:\Users\User\Desktop\CodeMetricsMSIC\DTO_Licenta\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\Desktop\CodeMetricsMSIC\DTO_Licenta\obj\Debug\DTO_Licenta.csprojResolveAssemblyReference.cache
+C:\Users\User\Desktop\CodeMetricsMSIC\DTO_Licenta\obj\Debug\DTO_Licenta.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\DTO_Licenta\obj\Debug\DTO_Licenta.pdb

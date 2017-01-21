@@ -1,0 +1,175 @@
+D:\WORK\MovieLibrary\ClientLicenta_GUI\ClientLicenta_GUI\bin\Debug\ClientLicenta_GUI.exe.config
+D:\WORK\MovieLibrary\ClientLicenta_GUI\ClientLicenta_GUI\bin\Debug\ClientLicenta_GUI.exe
+D:\WORK\MovieLibrary\ClientLicenta_GUI\ClientLicenta_GUI\bin\Debug\ClientLicenta_GUI.pdb
+D:\WORK\MovieLibrary\ClientLicenta_GUI\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.csprojResolveAssemblyReference.cache
+D:\WORK\MovieLibrary\ClientLicenta_GUI\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.Properties.Resources.resources
+D:\WORK\MovieLibrary\ClientLicenta_GUI\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.csproj.GenerateResource.Cache
+D:\WORK\MovieLibrary\ClientLicenta_GUI\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.exe
+D:\WORK\MovieLibrary\ClientLicenta_GUI\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.pdb
+D:\WORK\MovieLibrary\ClientLicenta_GUI\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.LoginForm.resources
+D:\WORK\MovieLibrary\ClientLicenta_GUI\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.MenuForm.resources
+D:\WORK\MovieLibrary\ClientLicenta_GUI\ClientLicenta_GUI\bin\Debug\Model.dll
+D:\WORK\MovieLibrary\ClientLicenta_GUI\ClientLicenta_GUI\bin\Debug\Model.pdb
+D:\WORK\MovieLibrary\ClientLicenta_GUI\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.EditDatabaseForm.resources
+D:\WORK\MovieLibrary\ClientLicenta_GUI\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.EmployeesListForm.resources
+D:\WORK\MovieLibrary\ClientLicenta_GUI\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.HolidayForm.resources
+D:\WORK\MovieLibrary\ClientLicenta_GUI\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.OtherForm.resources
+D:\WORK\MovieLibrary\ClientLicenta_GUI\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.ProfileForm.resources
+D:\WORK\Aplicatie Licenta\ClientLicenta_GUI\ClientLicenta_GUI\bin\Debug\ClientLicenta_GUI.exe.config
+D:\WORK\Aplicatie Licenta\ClientLicenta_GUI\ClientLicenta_GUI\bin\Debug\ClientLicenta_GUI.exe
+D:\WORK\Aplicatie Licenta\ClientLicenta_GUI\ClientLicenta_GUI\bin\Debug\ClientLicenta_GUI.pdb
+D:\WORK\Aplicatie Licenta\ClientLicenta_GUI\ClientLicenta_GUI\bin\Debug\Model.dll
+D:\WORK\Aplicatie Licenta\ClientLicenta_GUI\ClientLicenta_GUI\bin\Debug\Model.pdb
+D:\WORK\Aplicatie Licenta\ClientLicenta_GUI\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.csprojResolveAssemblyReference.cache
+D:\WORK\Aplicatie Licenta\ClientLicenta_GUI\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.EditDatabaseForm.resources
+D:\WORK\Aplicatie Licenta\ClientLicenta_GUI\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.EmployeesListForm.resources
+D:\WORK\Aplicatie Licenta\ClientLicenta_GUI\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.HolidayForm.resources
+D:\WORK\Aplicatie Licenta\ClientLicenta_GUI\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.MainForms.InsertApplicant.resources
+D:\WORK\Aplicatie Licenta\ClientLicenta_GUI\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.MainForms.InsertIntoDatabase.InsertCustomer.resources
+D:\WORK\Aplicatie Licenta\ClientLicenta_GUI\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.MainForms.InsertIntoDatabase.InsertEmployee.resources
+D:\WORK\Aplicatie Licenta\ClientLicenta_GUI\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.MainForms.InsertIntoDatabase.InsertIntern.resources
+D:\WORK\Aplicatie Licenta\ClientLicenta_GUI\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.MainForms.InsertIntoDatabase.InsertNotes.resources
+D:\WORK\Aplicatie Licenta\ClientLicenta_GUI\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.MainForms.InsertIntoDatabase.InsertProject.resources
+D:\WORK\Aplicatie Licenta\ClientLicenta_GUI\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.LoginForm.resources
+D:\WORK\Aplicatie Licenta\ClientLicenta_GUI\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.MenuForm.resources
+D:\WORK\Aplicatie Licenta\ClientLicenta_GUI\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.NewsFeedForm.resources
+D:\WORK\Aplicatie Licenta\ClientLicenta_GUI\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.NotesForm.resources
+D:\WORK\Aplicatie Licenta\ClientLicenta_GUI\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.ProfileForm.resources
+D:\WORK\Aplicatie Licenta\ClientLicenta_GUI\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.ProjectStatusForm.resources
+D:\WORK\Aplicatie Licenta\ClientLicenta_GUI\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.Properties.Resources.resources
+D:\WORK\Aplicatie Licenta\ClientLicenta_GUI\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.TasksForm.resources
+D:\WORK\Aplicatie Licenta\ClientLicenta_GUI\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.UserControls.ucApplicantInsert.resources
+D:\WORK\Aplicatie Licenta\ClientLicenta_GUI\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.csproj.GenerateResource.Cache
+D:\WORK\Aplicatie Licenta\ClientLicenta_GUI\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.exe.licenses
+D:\WORK\Aplicatie Licenta\ClientLicenta_GUI\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.exe
+D:\WORK\Aplicatie Licenta\ClientLicenta_GUI\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.pdb
+D:\WORK\Aplicatie Licenta\ClientLicenta_GUI\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.AllHolidaysForm.resources
+D:\WORK\Aplicatie Licenta\ClientLicenta_GUI\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.UserControls.ucTaskUpdate.resources
+D:\WORK\Aplicatie Licenta\ClientLicenta_GUI\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.MainForms.InsertIntoDatabase.NewTaskForm.resources
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\ClientLicenta_GUI.exe.config
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.exe
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.pdb
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\ClientLicenta_GUI.exe
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\ClientLicenta_GUI.pdb
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\DevExpress.Data.v14.2.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\DevExpress.Office.v14.2.Core.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\DevExpress.Printing.v14.2.Core.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\DevExpress.RichEdit.v14.2.Core.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\DevExpress.Utils.v14.2.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\DevExpress.Xpo.v14.2.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\DevExpress.XtraBars.v14.2.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\DevExpress.XtraEditors.v14.2.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\DevExpress.XtraGrid.v14.2.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\DevExpress.XtraLayout.v14.2.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\DevExpress.XtraPrinting.v14.2.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\DevExpress.XtraRichEdit.v14.2.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\DevExpress.XtraScheduler.v14.2.Core.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\DevExpress.XtraScheduler.v14.2.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\Model.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\DevExpress.Sparkline.v14.2.Core.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\DevExpress.XtraTreeList.v14.2.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\Model.pdb
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\DevExpress.Data.v14.2.xml
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\DevExpress.Office.v14.2.Core.xml
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\DevExpress.Printing.v14.2.Core.xml
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\DevExpress.RichEdit.v14.2.Core.xml
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\DevExpress.Utils.v14.2.xml
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\DevExpress.Xpo.v14.2.xml
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\DevExpress.XtraBars.v14.2.xml
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\DevExpress.XtraEditors.v14.2.xml
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\DevExpress.XtraGrid.v14.2.xml
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\DevExpress.XtraLayout.v14.2.xml
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\DevExpress.XtraPrinting.v14.2.xml
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\DevExpress.XtraRichEdit.v14.2.xml
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\DevExpress.XtraScheduler.v14.2.xml
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\DevExpress.XtraScheduler.v14.2.Core.xml
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\DevExpress.Sparkline.v14.2.Core.xml
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\DevExpress.XtraTreeList.v14.2.xml
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\de\DevExpress.Data.v14.2.resources.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\es\DevExpress.Data.v14.2.resources.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\ja\DevExpress.Data.v14.2.resources.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\ru\DevExpress.Data.v14.2.resources.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\de\DevExpress.Office.v14.2.Core.resources.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\es\DevExpress.Office.v14.2.Core.resources.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\ja\DevExpress.Office.v14.2.Core.resources.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\ru\DevExpress.Office.v14.2.Core.resources.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\de\DevExpress.Printing.v14.2.Core.resources.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\es\DevExpress.Printing.v14.2.Core.resources.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\ja\DevExpress.Printing.v14.2.Core.resources.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\ru\DevExpress.Printing.v14.2.Core.resources.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\de\DevExpress.RichEdit.v14.2.Core.resources.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\es\DevExpress.RichEdit.v14.2.Core.resources.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\ja\DevExpress.RichEdit.v14.2.Core.resources.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\ru\DevExpress.RichEdit.v14.2.Core.resources.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\de\DevExpress.Utils.v14.2.resources.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\es\DevExpress.Utils.v14.2.resources.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\ja\DevExpress.Utils.v14.2.resources.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\ru\DevExpress.Utils.v14.2.resources.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\de\DevExpress.Xpo.v14.2.resources.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\es\DevExpress.Xpo.v14.2.resources.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\ja\DevExpress.Xpo.v14.2.resources.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\ru\DevExpress.Xpo.v14.2.resources.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\de\DevExpress.XtraBars.v14.2.resources.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\es\DevExpress.XtraBars.v14.2.resources.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\ja\DevExpress.XtraBars.v14.2.resources.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\ru\DevExpress.XtraBars.v14.2.resources.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\de\DevExpress.XtraEditors.v14.2.resources.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\es\DevExpress.XtraEditors.v14.2.resources.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\ja\DevExpress.XtraEditors.v14.2.resources.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\ru\DevExpress.XtraEditors.v14.2.resources.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\de\DevExpress.XtraGrid.v14.2.resources.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\es\DevExpress.XtraGrid.v14.2.resources.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\ja\DevExpress.XtraGrid.v14.2.resources.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\ru\DevExpress.XtraGrid.v14.2.resources.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\de\DevExpress.XtraLayout.v14.2.resources.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\es\DevExpress.XtraLayout.v14.2.resources.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\ja\DevExpress.XtraLayout.v14.2.resources.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\ru\DevExpress.XtraLayout.v14.2.resources.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\de\DevExpress.XtraPrinting.v14.2.resources.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\es\DevExpress.XtraPrinting.v14.2.resources.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\ja\DevExpress.XtraPrinting.v14.2.resources.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\ru\DevExpress.XtraPrinting.v14.2.resources.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\de\DevExpress.XtraRichEdit.v14.2.resources.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\es\DevExpress.XtraRichEdit.v14.2.resources.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\ja\DevExpress.XtraRichEdit.v14.2.resources.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\ru\DevExpress.XtraRichEdit.v14.2.resources.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\de\DevExpress.XtraScheduler.v14.2.resources.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\es\DevExpress.XtraScheduler.v14.2.resources.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\ja\DevExpress.XtraScheduler.v14.2.resources.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\ru\DevExpress.XtraScheduler.v14.2.resources.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\de\DevExpress.XtraScheduler.v14.2.Core.resources.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\es\DevExpress.XtraScheduler.v14.2.Core.resources.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\ja\DevExpress.XtraScheduler.v14.2.Core.resources.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\ru\DevExpress.XtraScheduler.v14.2.Core.resources.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\de\DevExpress.Sparkline.v14.2.Core.resources.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\es\DevExpress.Sparkline.v14.2.Core.resources.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\ja\DevExpress.Sparkline.v14.2.Core.resources.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\ru\DevExpress.Sparkline.v14.2.Core.resources.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\de\DevExpress.XtraTreeList.v14.2.resources.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\es\DevExpress.XtraTreeList.v14.2.resources.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\ja\DevExpress.XtraTreeList.v14.2.resources.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\bin\Debug\ru\DevExpress.XtraTreeList.v14.2.resources.dll
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.csprojResolveAssemblyReference.cache
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.EditDatabaseForm.resources
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.EmployeesListForm.resources
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.HolidayForm.resources
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.MainForms.InsertApplicant.resources
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.MainForms.InsertIntoDatabase.InsertCustomer.resources
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.MainForms.InsertIntoDatabase.InsertEmployee.resources
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.MainForms.InsertIntoDatabase.InsertIntern.resources
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.MainForms.InsertIntoDatabase.InsertNotes.resources
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.MainForms.InsertIntoDatabase.InsertProject.resources
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.MainForms.InsertIntoDatabase.NewTaskForm.resources
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.LoginForm.resources
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.MenuForm.resources
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.NewsFeedForm.resources
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.NotesForm.resources
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.AllHolidaysForm.resources
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.ProfileForm.resources
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.ProjectStatusForm.resources
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.Properties.Resources.resources
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.TasksForm.resources
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.UserControls.ucApplicantInsert.resources
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.UserControls.ucTaskUpdate.resources
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.csproj.GenerateResource.Cache
+C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.exe.licenses

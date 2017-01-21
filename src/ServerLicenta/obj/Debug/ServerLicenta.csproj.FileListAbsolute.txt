@@ -1,0 +1,28 @@
+C:\Users\Andreea Vulpe\Documents\Visual Studio 2013\Projects\ServerLicenta\ServerLicenta\obj\Debug\ServerLicenta.csprojResolveAssemblyReference.cache
+C:\Users\Andreea Vulpe\Documents\Visual Studio 2013\Projects\ServerLicenta\ServerLicenta\bin\ServerLicenta.dll.config
+C:\Users\Andreea Vulpe\Documents\Visual Studio 2013\Projects\ServerLicenta\ServerLicenta\bin\ServerLicenta.dll
+C:\Users\Andreea Vulpe\Documents\Visual Studio 2013\Projects\ServerLicenta\ServerLicenta\bin\ServerLicenta.pdb
+C:\Users\Andreea Vulpe\Documents\Visual Studio 2013\Projects\ServerLicenta\ServerLicenta\bin\DB_Licenta.dll
+C:\Users\Andreea Vulpe\Documents\Visual Studio 2013\Projects\ServerLicenta\ServerLicenta\bin\DTO_Licenta.dll
+C:\Users\Andreea Vulpe\Documents\Visual Studio 2013\Projects\ServerLicenta\ServerLicenta\bin\EntityFramework.dll
+C:\Users\Andreea Vulpe\Documents\Visual Studio 2013\Projects\ServerLicenta\ServerLicenta\bin\EntityFramework.SqlServer.dll
+C:\Users\Andreea Vulpe\Documents\Visual Studio 2013\Projects\ServerLicenta\ServerLicenta\bin\DB_Licenta.pdb
+C:\Users\Andreea Vulpe\Documents\Visual Studio 2013\Projects\ServerLicenta\ServerLicenta\bin\DTO_Licenta.pdb
+C:\Users\Andreea Vulpe\Documents\Visual Studio 2013\Projects\ServerLicenta\ServerLicenta\bin\EntityFramework.xml
+C:\Users\Andreea Vulpe\Documents\Visual Studio 2013\Projects\ServerLicenta\ServerLicenta\bin\EntityFramework.SqlServer.xml
+C:\Users\Andreea Vulpe\Documents\Visual Studio 2013\Projects\ServerLicenta\ServerLicenta\obj\Debug\ServerLicenta.dll
+C:\Users\Andreea Vulpe\Documents\Visual Studio 2013\Projects\ServerLicenta\ServerLicenta\obj\Debug\ServerLicenta.pdb
+D:\WORK\Aplicatie Licenta\ServerLicenta\ServerLicenta\bin\ServerLicenta.dll.config
+D:\WORK\Aplicatie Licenta\ServerLicenta\ServerLicenta\bin\ServerLicenta.dll
+D:\WORK\Aplicatie Licenta\ServerLicenta\ServerLicenta\bin\ServerLicenta.pdb
+D:\WORK\Aplicatie Licenta\ServerLicenta\ServerLicenta\bin\DB_Licenta.dll
+D:\WORK\Aplicatie Licenta\ServerLicenta\ServerLicenta\bin\DTO_Licenta.dll
+D:\WORK\Aplicatie Licenta\ServerLicenta\ServerLicenta\bin\EntityFramework.dll
+D:\WORK\Aplicatie Licenta\ServerLicenta\ServerLicenta\bin\EntityFramework.SqlServer.dll
+D:\WORK\Aplicatie Licenta\ServerLicenta\ServerLicenta\bin\DB_Licenta.pdb
+D:\WORK\Aplicatie Licenta\ServerLicenta\ServerLicenta\bin\DTO_Licenta.pdb
+D:\WORK\Aplicatie Licenta\ServerLicenta\ServerLicenta\bin\EntityFramework.xml
+D:\WORK\Aplicatie Licenta\ServerLicenta\ServerLicenta\bin\EntityFramework.SqlServer.xml
+D:\WORK\Aplicatie Licenta\ServerLicenta\ServerLicenta\obj\Debug\ServerLicenta.csprojResolveAssemblyReference.cache
+D:\WORK\Aplicatie Licenta\ServerLicenta\ServerLicenta\obj\Debug\ServerLicenta.dll
+D:\WORK\Aplicatie Licenta\ServerLicenta\ServerLicenta\obj\Debug\ServerLicenta.pdb
