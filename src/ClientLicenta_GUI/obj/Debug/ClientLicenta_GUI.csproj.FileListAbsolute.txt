@@ -173,3 +173,6 @@ C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\obj\Debug\ClientLicenta_
 C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.UserControls.ucTaskUpdate.resources
 C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.csproj.GenerateResource.Cache
 C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.exe.licenses
+D:\Documents\Master\Semestrul I\MSIC\MISC.AplicatieLicenta\src\ClientLicenta_GUI\bin\Debug\ClientLicenta_GUI.exe.config
+D:\Documents\Master\Semestrul I\MSIC\MISC.AplicatieLicenta\src\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.exe
+D:\Documents\Master\Semestrul I\MSIC\MISC.AplicatieLicenta\src\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.pdb
