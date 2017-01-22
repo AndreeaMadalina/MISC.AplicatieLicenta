@@ -17,6 +17,9 @@ namespace ServerLicenta
         #region Authenticate
         public LoginDTO Authenticate(string username, string password)
         {
+            // Aceasta functie verifica daca cel care urmeaza sa se conecteze la aplicatie este un user in baza de date.
+            // Atunci cand user-ul vrea sa se intre in aplicatie, acesta isi scrie username-ul si parola, care vor fi preluate mai departe 
+            // de serviciu si verificate in baza de date.
             LoginDTO exists = new LoginDTO();
             EmployeeDTO employee = new EmployeeDTO();
             exists.Employee = employee;
@@ -24,7 +27,9 @@ namespace ServerLicenta
             {
                 using (var context = new DatabaseLicentaContext())
                 {
+                    // Se cauta in baza de date user-ul cu username-ul si parola trimise de client
                     var login = context.Logins.FirstOrDefault(x => x.Username == username && x.Password == password);
+                    //Daca se gaseste se converteste de la tipul Login la LoginDTO si se returneaza mai departe cu detaliile specifice lui
                     if (login != null)
                     {
                         exists.EmployeeID = Convert.ToInt32(login.EmployeeID);
@@ -43,8 +48,10 @@ namespace ServerLicenta
                         exists.Employee.PhoneNumber = login.Employee.PhoneNumber;
                         exists.Employee.Studies = login.Employee.Studies;
                         
+                        //Se returneaza user-ul 
                         return exists;
                     }
+                    // Daca nu exista, returneaza null
                     else
                         return null;
                 }
@@ -96,13 +103,16 @@ namespace ServerLicenta
         #region FillEmployeeGrid
         public List<EmployeeDTO> FillEmployeeGrid()
         {
+            // Creez o noua lista de tipul EmployeeDTO in care urmeaza sa pun toti angajatii firmei selectati din baza de date
             List<EmployeeDTO> employeeList = new List<EmployeeDTO>();
             
             try
-            {
+            { 
+                //Creez un context de tipul bazei de date si prin intermediul lui selectez toti angajatii
                 using (var context = new DatabaseLicentaContext())
                 {
                     var e = context.Employees;
+                    //Fac conversia din Employee in EmployeeDTO pentru a-mi putea popula lista de angajati
                     foreach (var employee in e)
                     {
                         EmployeeDTO employeeDTO = new EmployeeDTO();
@@ -187,7 +197,9 @@ namespace ServerLicenta
             {
                 using (var context = new DatabaseLicentaContext())
                 {
+                    // Se selecteaza din baza de date toate proiectele firmei
                     var p = context.Projects;
+                    // Pentru fiecate proiect gasit se face coversia la Data Transfer Object (DTO) si se adauga in lista projectList
                     foreach (var project in p)
                     {
                         CustomerDTO customerDTO = new CustomerDTO();
@@ -209,6 +221,7 @@ namespace ServerLicenta
 
                         projectList.Add(projectDTO);
                     }
+                    // Se returneaza lista de proiecte 
                     return projectList;
                 }
             }
@@ -224,28 +237,35 @@ namespace ServerLicenta
         #region FillInternGrid
         public List<InternDTO> FillInternGrid()
         {
+            // Se creaza O lista de stagiari de tipul Data Transfer Object  
             List<InternDTO> internList = new List<InternDTO>();
             
-
             try
             {
                 using (var context = new DatabaseLicentaContext())
                 {
+                    // Se selecteaza toti stagiarii din baza de date
                     var i = context.Interns;
+                    //Pentru fiecare stagiar se face conversia la tipul DTO
                     foreach (var intern in i)
                     {
+                        // Pentru ca fiecare stagiar este un aplicant prima data, se creaza un obiect de tipul AplicantDTO
+                        // Si pentru ca de fiecare stagiar este responsabil un anumit angajat, cream un obiect de tipul EmployeeDTO
                         InternDTO internDTO = new InternDTO();
                         ApplicantDTO applicantDTO = new ApplicantDTO();
                         EmployeeDTO employeeDTO = new EmployeeDTO();
                         internDTO.Applicant = applicantDTO;
                         internDTO.Employee = employeeDTO;
 
+                        // Se ia datele din tabela Intern
                         internDTO.InternID = Convert.ToInt32(intern.InternID);
                         internDTO.StartDate = Convert.ToDateTime(intern.StartDate);
                         internDTO.EndDate = Convert.ToDateTime(intern.EndDate);
                         internDTO.Observation = intern.Observation;
+                        // Se iau datele angajatului care se ocupa de stagiar
                         internDTO.Employee.FirstName = intern.Employee.FirstName;
                         internDTO.Employee.LastName = intern.Employee.LastName;
+                        // Se iau datele personale ale stagiarului din Aplicant
                         internDTO.Applicant.FirstName = intern.Applicant.FirstName;
                         internDTO.Applicant.LastName = intern.Applicant.LastName;
                         internDTO.Applicant.Mail = intern.Applicant.Mail;
@@ -253,8 +273,10 @@ namespace ServerLicenta
                         internDTO.Applicant.PhoneNumber = intern.Applicant.PhoneNumber;
                         internDTO.Applicant.Studies = intern.Applicant.Studies;
 
+                        // Se adauga in lista
                         internList.Add(internDTO);
                     }
+                    // Se returneaza lista de stagiari
                     return internList;
                 }
             }
@@ -269,15 +291,19 @@ namespace ServerLicenta
         #region FillTaskGrid
         public List<TaskDTO> FillTaskGrid(int userID)
         {
+            // Se creaza o lista de task-uri de tipui DTO
             List<TaskDTO> taskList = new List<TaskDTO>();
 
             try
             {
                 using (var context = new DatabaseLicentaContext())
                 {
+                    // Se cauta in baza de date toate task-urile asignate unui user, dupa userID si care nu au fost finalizate
+                    // Apoi se convertesc intr-o lista 
                     var find = context.Tasks.Where(x => x.EmployeeID == userID && x.Status == false).ToList();
                     if (find != null)
                     {
+                        // Pentru fiecare task gasit, se face conversia la DTO si se adauga in lista creata mai sus
                         foreach (var task in find)
                         {
                             TaskDTO taskDTO = new TaskDTO();
@@ -297,6 +323,7 @@ namespace ServerLicenta
                         }
                     }
                 }
+                // Se returneaza lista de task-uri
                 return taskList;
             }
             catch (Exception)
@@ -309,29 +336,36 @@ namespace ServerLicenta
         #region FillHolidaysGrid
         public List<HolidayDTO> FillHolidaysGrid()
         {
+            // Se creaza o lista de zile de concediu de tipul DTO
             List<HolidayDTO> holidayList = new List<HolidayDTO>();
             try
             {
                 using (var context = new DatabaseLicentaContext())
                 {
+                    // Se selecteaza din baza de date toate zilele de concediu
                     var result = context.Holidays;
+                    // Pentru fiecare zi de concediu selectata, se face conversia la DTO
                     foreach (var holiday in result)
                     {
                         HolidayDTO holidayDTO = new HolidayDTO();
                         EmployeeDTO employeeDTO = new EmployeeDTO();
                         holidayDTO.Employee = employeeDTO;
 
+                        // Se selecteaza numele, prenumele si ID-ul angajatului
                         holidayDTO.Employee.FirstName = holiday.Employee.FirstName;
                         holidayDTO.Employee.LastName = holiday.Employee.LastName;
                         holidayDTO.EmployeeID = holiday.EmployeeID;
+                        // Se selecteaza detalile zilei/zilelor de concediu
                         holidayDTO.HolidayID = holiday.HolidayID;
                         holidayDTO.StartDate = holiday.StartDate;
                         holidayDTO.EndDate = holiday.EndDate;
                         holidayDTO.Type = holiday.Type;
 
+                        // Se adauga selectia in lista de concediu
                         holidayList.Add(holidayDTO);
                     }
                 }
+                // Se returneaza zilele de concediu impreuna cu angajatii care le-au solicitat
                 return holidayList;
             }
             catch (Exception)
@@ -669,9 +703,12 @@ namespace ServerLicenta
             {
                 using (var context = new DatabaseLicentaContext())
                 {
+                    // Se pregateste baza de date pentru inserarea unui nou aplicant creandu-se cate o entitate pentru tabelele
+                    // Applicant si Registration
                     Applicant applicant = context.Applicants.Create();
                     Registration registration = context.Registrations.Create();
 
+                    // Se adauga datele despre aplicant care vor a fi inserate in baza 
                     applicant.FirstName = applicantDTO.FirstName;
                     applicant.LastName = applicantDTO.LastName;
                     applicant.Mail = applicantDTO.Mail;
@@ -680,16 +717,22 @@ namespace ServerLicenta
                     applicant.Studies = applicantDTO.Studies;
                     applicant.BirthDate = applicantDTO.BirthDate;
 
+                    // Se adauga in tabela si se salveaza schimbaile
                     context.Applicants.Add(applicant);
                     context.SaveChanges();
 
-                    //Inregistreaza optiunea aplicantului
+                    // Inregistreaza optiunea aplicantului
+                    // Aici se fac legaturile cu tabele Jobs si Departments
+                    // Se pastreaza id-ul aplicantului deja inserat
+                    // Se completeaza field-urile tabelei Registrations
                     registration.ApplicantID = applicant.ApplicantID;
+                    // Se cauta in baza job-ul ales de aplicant si i se adauga ID-ul in instanta registration
                     var findJob = context.Jobs.FirstOrDefault(x => x.JobTitle == job);
                     if(findJob != null)
                     {
                         registration.JobID = findJob.JobID;
                     }
+                    // Se cauta in baza departamentul ales de aplicant si i se adauga ID-ul in registration
                     var findDepartment = context.Departments.FirstOrDefault(x => x.DepartmentName == department);
                     if(findDepartment != null)
                     {
@@ -697,13 +740,16 @@ namespace ServerLicenta
                     }
                     registration.AppliedDate = DateTime.Now;
                     registration.Observation = observation;
+                    // Se adauga recordul in tabela si se salveaza modificarile
                     context.Registrations.Add(registration);
                     context.SaveChanges();
                 }
+                // Se returneaza true in cazul in care inserarea s-a facut cu succes
                 return true;
             }
             catch (Exception)
             {
+                // Se returneaza false daca record-ul nu a putut fi inserat
                 return false;
             }
         }
