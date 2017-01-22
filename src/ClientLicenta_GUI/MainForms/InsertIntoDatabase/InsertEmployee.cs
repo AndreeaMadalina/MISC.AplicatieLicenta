@@ -70,17 +70,25 @@ namespace ClientLicenta_GUI.MainForms.InsertIntoDatabase
         #region SaveButton_Click
         private void SaveButton_Click(object sender, EventArgs e)
         {
+            // Se creaza o instanta de tipul EmployeeDTO
             EmployeeDTO employee = new EmployeeDTO();
+            // Se creaza o instanta de tipul DepartmentDTO in care se vor pune datele departamentului unde va lucra noul angajat
             DepartmentDTO department = new DepartmentDTO();
+            // Se creaza o instanta de tipul JobDTO in care se vor gasi datele job-ului angajatului
             JobDTO job = new JobDTO();
+            // Se creaza o instanta de tipul LoginDTO care va reprezenta contul de acces al aplicatiei pentru noul angajat
             LoginDTO account = new LoginDTO();
 
+            // Se adauga datele contului in instanta account si nivelul de securitate (cat de mult poate accesa aplicatia)
             account.Username = UsernameTextEdit.Text;
             account.Password = PasswordTextEdit.Text;
             account.SecurityLevel = priority;
 
+            // Se adauga departamentul unde acesta va lucra
             employee.Department = department;
+            // Se adauga job-ul pe care il va avea
             employee.Job = job;
+            // Se adauga detalii personale despre angajat
             employee.FirstName = ucApplicantInsert1.GetFirstName;
             employee.LastName = ucApplicantInsert1.GetLastName;
             employee.BirthDate = CheckBirthDate(ucApplicantInsert1.GetBirthDate);
@@ -103,6 +111,7 @@ namespace ClientLicenta_GUI.MainForms.InsertIntoDatabase
             employee.Job = JobComboBox.SelectedItem as JobDTO;
             employee.FileNumber = Convert.ToInt32(FileNumberTextEdit.Text);
 
+            // Se verifica daca inregistrarea a avut loc cu succes sau nu si se afiseaza un mesaj in functie de caz
             if (_service.InsertEmployee(employee, account))
             {
                 MessageBox.Show("Success!");
@@ -111,6 +120,7 @@ namespace ClientLicenta_GUI.MainForms.InsertIntoDatabase
             {
                 MessageBox.Show("Please try again!");
             }
+            // Se inchide forma de inserare angajat
             this.Close();
         }
         #endregion

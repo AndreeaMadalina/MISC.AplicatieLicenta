@@ -67,7 +67,9 @@ namespace ClientLicenta_GUI
 
         private void OnGetTasks()
         {
+            // Se creaza o lista de task-uri de tipul DTO
             List<TaskDTO> taskList = new List<TaskDTO>();
+            // Pentru fiecare task al user-ului curent, returnat de catre serviciu, se copiaza detaliile acestuia
             foreach (var item in _service.FillTaskGrid(GlobalVariables.CurrentUser.EmployeeID))
             {
                 TaskDTO task = new TaskDTO();
@@ -79,16 +81,23 @@ namespace ClientLicenta_GUI
                 task.ProjectID = item.ProjectID;
                 task.TaskID = item.TaskID;
                 task.TaskName = item.TaskName;
-
+                
+                // Se adauga fiecare task in lista creata mai sus
                 taskList.Add(task);
             }
 
+            // Se sterge forma
             TaskPanel.Controls.Clear();
+            // Se creaza un vector de userControale
             ucTaskUpdate[] uc = new ucTaskUpdate[20];
+            // Se itereaza prin lista de task-uri
             for (int i = 0; i < taskList.Count; i++)
             {
+                // Pentru fiecare task, se adauga un nou element in vectorul creat mai sus (uc)
                 uc[i] = new ucTaskUpdate(taskList[i]);
+                // Se adauga apoi controlul pe forma
                 TaskPanel.Controls.Add(uc[i]);
+                // Se seteaza marimea si locatia pe forma respectiva
                 uc[i].Size = new System.Drawing.Size(TaskPanel.Width, 25);
                 uc[i].Location = new Point(3, i * 30);
             }

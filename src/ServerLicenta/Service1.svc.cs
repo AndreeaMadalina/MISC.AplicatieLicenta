@@ -122,6 +122,7 @@ namespace ServerLicenta
                         employeeDTO.Department = departmentDTO;
                         employeeDTO.Job = jobDTO;
 
+                        // Se iau detalile selectate din baza de date si se populeaza proprietatile instantei de tipul DTO
                         employeeDTO.EmployeeID = Convert.ToInt32(employee.EmployeeID);
                         employeeDTO.FirstName = employee.FirstName;
                         employeeDTO.LastName = employee.LastName;
@@ -136,12 +137,16 @@ namespace ServerLicenta
                         employeeDTO.Studies = employee.Studies;
                         employeeDTO.Salary = employee.Salary;
                         employeeDTO.FileNumber = employee.FileNumber;
+                        // Se ia numele si locatia departamentul unde lucreaza angajatul
                         employeeDTO.Department.DepartmentName = employee.Department.DepartmentName;
                         employeeDTO.Department.Location = employee.Department.Location;
+                        // Se ia numele job-ului pe care acesta il are
                         employeeDTO.Job.JobTitle = employee.Job.JobTitle;
 
+                        // Se adauga in lista creata mai sus
                         employeeList.Add(employeeDTO);
                     }
+                    // Se returneaza lista de angajati
                     return employeeList;
                 }
             }
@@ -199,7 +204,7 @@ namespace ServerLicenta
                 {
                     // Se selecteaza din baza de date toate proiectele firmei
                     var p = context.Projects;
-                    // Pentru fiecate proiect gasit se face coversia la Data Transfer Object (DTO) si se adauga in lista projectList
+                    // Pentru fiecate proiect gasit se face coversia la Data Transfer Object (DTO)
                     foreach (var project in p)
                     {
                         CustomerDTO customerDTO = new CustomerDTO();
@@ -208,9 +213,12 @@ namespace ServerLicenta
                         projectDTO.Customer = customerDTO;
                         projectDTO.Employee = employeeDTO;
 
+                        // Se iau detaliile despre proiect
                         projectDTO.ProjectID = Convert.ToInt32(project.ProjectID);
+                        // Se ia clientul caruia ii apartine proiectul
                         projectDTO.Customer.Name = project.Customer.Name;
                         projectDTO.Description = project.Description;
+                        // Se ia numele angajatului care este responsabil de proiect (manager-ul)
                         projectDTO.Employee.FirstName = project.Employee.FirstName;
                         projectDTO.Employee.LastName = project.Employee.LastName;
                         projectDTO.EndDate = Convert.ToDateTime(project.EndDate);
@@ -219,6 +227,7 @@ namespace ServerLicenta
                         projectDTO.StartDate = Convert.ToDateTime(project.StartDate);
                         projectDTO.Status = Convert.ToDouble(project.Status);
 
+                        // Se adauga in tabela creata mai sus
                         projectList.Add(projectDTO);
                     }
                     // Se returneaza lista de proiecte 
@@ -227,7 +236,6 @@ namespace ServerLicenta
             }
             catch (Exception)
             {
-                
                 throw;
             }
         }
@@ -312,13 +320,16 @@ namespace ServerLicenta
                             taskDTO.Priority = priorityDTO;
                             taskDTO.Project = projectDTO;
 
+                            // Iau datele despre tassk
                             taskDTO.TaskID = Convert.ToInt32(task.TaskID);
                             taskDTO.TaskName = task.TaskName;
                             taskDTO.Status = Convert.ToBoolean(task.Status);
                             taskDTO.ProjectID = Convert.ToInt32(task.ProjectID);
+                            // Iau numele proiectului caruia ii apartine task-ul respectiv
                             taskDTO.Project.ProjectName = task.Project.ProjectName;
                             taskDTO.Observations = task.Observations;
 
+                            // Adaug task-ul in lista de task-uri
                             taskList.Add(taskDTO);
                         }
                     }
@@ -380,27 +391,37 @@ namespace ServerLicenta
         {
             try
             {
+                // Creez o lista de angajati de tipul DTO
                 List<EmployeeDTO> employeesList = new List<EmployeeDTO>();
+                // Se creaza o instanta de tipul context al bazei de date prin care se pot accesa tabelele
                 using (var context = new DatabaseLicentaContext())
                 {
+                    // Selectez din baza de date proiectele asignate unui manager
                     var project = context.Projects.FirstOrDefault(x => x.EmployeeID == managerID);
                     if(project != null)
                     {
+                        // Se selecteaza toti angajatii din baza
                         var result = context.Employees;
                         if(result != null)
                         {
+                            // Pentru fiecare angajat din lista se face conversia la DTO
                             foreach (var employee in result)
                             {
+                                // Pentru fiecare angajat se selecteaza din baza task-ul la care acesta lucreaza, in fuctie de proiect
                                 var exists = context.Tasks.FirstOrDefault(x => x.EmployeeID == employee.EmployeeID && x.ProjectID == project.ProjectID);
                                 if(exists != null)
                                 {
+                                    // Se creaza o instanta de tipul EmployeeDTO
                                     EmployeeDTO employeeDTO = new EmployeeDTO();
+                                    // Se creaza o instanta de tipul DeparmentDTO in care se vor pune datele departamentului unde lucreaza angajatul
                                     DepartmentDTO departmentDTO = new DepartmentDTO();
+                                    // Se creaza o instanta de tipul JobDTO care va contine date despre job-ul angajatului
                                     JobDTO jobDTO = new JobDTO();
 
                                     employeeDTO.Department = departmentDTO;
                                     employeeDTO.Job = jobDTO;
 
+                                    // Se iau detalile despre angajat
                                     employeeDTO.EmployeeID = Convert.ToInt32(employee.EmployeeID);
                                     employeeDTO.FirstName = employee.FirstName;
                                     employeeDTO.LastName = employee.LastName;
@@ -415,21 +436,24 @@ namespace ServerLicenta
                                     employeeDTO.Studies = employee.Studies;
                                     employeeDTO.Salary = employee.Salary;
                                     employeeDTO.FileNumber = employee.FileNumber;
+                                    // Se ia departamentul si locatia departamentului unde lucreaza angajatul
                                     employeeDTO.Department.DepartmentName = employee.Department.DepartmentName;
                                     employeeDTO.Department.Location = employee.Department.Location;
+                                    // Se ia job-ul pe care acesta il are
                                     employeeDTO.Job.JobTitle = employee.Job.JobTitle;
 
+                                    // Se adauga in lista de angajati creata mai sus
                                     employeesList.Add(employeeDTO);
                                 }
                             }
                         }
                     }
+                    // Se returneaza lista de angajati de pe un anumit proiect
                     return employeesList;
                 }
             }
             catch (Exception)
             {
-                
                 throw;
             }
         }
@@ -763,13 +787,17 @@ namespace ServerLicenta
             {
                 using (var context = new DatabaseLicentaContext())
                 {
+                    // Se pregateste baza de date pentru inserarea unui nou aplicant 
+                    // Se creaza o entitate pentru tabela Employees
                     Employee employee = context.Employees.Create();
                     
+                    // Se adauga detaliile angajatului in entitatea nou creata
                     employee.Address = employeeDTO.Address;
                     employee.BirthDate = employeeDTO.BirthDate;
                     employee.FileNumber = employeeDTO.FileNumber;
                     employee.FirstName = employeeDTO.FirstName;
                     employee.Gender = employeeDTO.Gender;
+                    // Se adauga data curenta la care se face inregistrarea angajatului in sistem
                     employee.HireDate = DateTime.Now;
                     employee.LastName = employeeDTO.LastName;
                     employee.Mail = employeeDTO.Mail;
@@ -778,25 +806,31 @@ namespace ServerLicenta
                     employee.PNC = employeeDTO.PNC;
                     employee.Salary = employeeDTO.Salary;
                     employee.Studies = employeeDTO.Studies;
+                    // Se adauga id-ul departamentului de care acesta o sa apartina si id-ul job-ului pe care il va avea
                     employee.DepartmentID = employeeDTO.Department.DepartmentID;
                     employee.JobID = employeeDTO.Job.JobID;
                     
+                    // Se adauga angajatul in tabela si se salveaza modificarile
                     context.Employees.Add(employee);
                     context.SaveChanges();
 
+                    // Se adauga detalile contului noului angajat
                     Login login = context.Logins.Create();
                     login.EmployeeID = employee.EmployeeID;
                     login.Password = loginDTO.Password;
                     login.Username = loginDTO.Username;
                     login.SecurityLevel = loginDTO.SecurityLevel;
 
+                    // Se adauga in tabela Logins si se salveaza modificarile
                     context.Logins.Add(login);
                     context.SaveChanges();
                 }
+                // Daca operatiunea a avut succes se returneaza true
                 return true;
             }
             catch (Exception)
             {
+                // In cazul in care salvarea nu s-a putut face, se returneaza false
                 return false;
             }
         }
