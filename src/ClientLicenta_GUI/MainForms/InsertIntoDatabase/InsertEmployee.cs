@@ -16,6 +16,7 @@ namespace ClientLicenta_GUI.MainForms.InsertIntoDatabase
     {
         #region VARIABLES
         private Service1Client _service = new Service1Client();
+        private ReadServiceClient _serviceRead = new ReadServiceClient();
         private int priority;
         #endregion
 
@@ -141,7 +142,7 @@ namespace ClientLicenta_GUI.MainForms.InsertIntoDatabase
         #region FillComboBoxDepartment
         private void FillComboBoxDepartment()
         {
-            DepartmentComboBox.DataSource = _service.FillComboBoxDepartment();
+            DepartmentComboBox.DataSource = _serviceRead.FillComboBoxDepartment();
             DepartmentComboBox.DisplayMember = "DepartmentName";
         }
         #endregion
@@ -149,7 +150,7 @@ namespace ClientLicenta_GUI.MainForms.InsertIntoDatabase
         #region FillComboBoxJob
         private void FillComboBoxJob()
         {
-            JobComboBox.DataSource = _service.FillComboBoxJob();
+            JobComboBox.DataSource = _serviceRead.FillComboBoxJob();
             JobComboBox.DisplayMember = "JobTitle";
         }
         #endregion

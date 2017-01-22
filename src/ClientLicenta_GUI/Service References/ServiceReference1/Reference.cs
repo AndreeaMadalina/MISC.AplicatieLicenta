@@ -15,33 +15,42 @@ namespace ClientLicenta_GUI.ServiceReference1 {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="LoginDTO", Namespace="http://schemas.datacontract.org/2004/07/DTO_Licenta")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="ApplicantDTO", Namespace="http://schemas.datacontract.org/2004/07/DTO_Licenta")]
     [System.SerializableAttribute()]
-    public partial class LoginDTO : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+    public partial class ApplicantDTO : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
         [System.NonSerializedAttribute()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private ClientLicenta_GUI.ServiceReference1.EmployeeDTO EmployeeField;
+        private int ApplicantIDField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int EmployeeIDField;
+        private System.DateTime BirthDateField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int LoginIDField;
+        private string FirstNameField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private ClientLicenta_GUI.ServiceReference1.NoteDTO NoteField;
+        private ClientLicenta_GUI.ServiceReference1.InternDTO[] InternsField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string PasswordField;
+        private string LastNameField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int SecurityLevelField;
+        private string MailField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string UsernameField;
+        private string NationalityField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string PhoneNumberField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClientLicenta_GUI.ServiceReference1.RegistrationDTO[] RegistrationsField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string StudiesField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
@@ -50,6 +59,215 @@ namespace ClientLicenta_GUI.ServiceReference1 {
             }
             set {
                 this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int ApplicantID {
+            get {
+                return this.ApplicantIDField;
+            }
+            set {
+                if ((this.ApplicantIDField.Equals(value) != true)) {
+                    this.ApplicantIDField = value;
+                    this.RaisePropertyChanged("ApplicantID");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.DateTime BirthDate {
+            get {
+                return this.BirthDateField;
+            }
+            set {
+                if ((this.BirthDateField.Equals(value) != true)) {
+                    this.BirthDateField = value;
+                    this.RaisePropertyChanged("BirthDate");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string FirstName {
+            get {
+                return this.FirstNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.FirstNameField, value) != true)) {
+                    this.FirstNameField = value;
+                    this.RaisePropertyChanged("FirstName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClientLicenta_GUI.ServiceReference1.InternDTO[] Interns {
+            get {
+                return this.InternsField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.InternsField, value) != true)) {
+                    this.InternsField = value;
+                    this.RaisePropertyChanged("Interns");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string LastName {
+            get {
+                return this.LastNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.LastNameField, value) != true)) {
+                    this.LastNameField = value;
+                    this.RaisePropertyChanged("LastName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Mail {
+            get {
+                return this.MailField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.MailField, value) != true)) {
+                    this.MailField = value;
+                    this.RaisePropertyChanged("Mail");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Nationality {
+            get {
+                return this.NationalityField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.NationalityField, value) != true)) {
+                    this.NationalityField = value;
+                    this.RaisePropertyChanged("Nationality");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string PhoneNumber {
+            get {
+                return this.PhoneNumberField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.PhoneNumberField, value) != true)) {
+                    this.PhoneNumberField = value;
+                    this.RaisePropertyChanged("PhoneNumber");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClientLicenta_GUI.ServiceReference1.RegistrationDTO[] Registrations {
+            get {
+                return this.RegistrationsField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.RegistrationsField, value) != true)) {
+                    this.RegistrationsField = value;
+                    this.RaisePropertyChanged("Registrations");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Studies {
+            get {
+                return this.StudiesField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.StudiesField, value) != true)) {
+                    this.StudiesField = value;
+                    this.RaisePropertyChanged("Studies");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="InternDTO", Namespace="http://schemas.datacontract.org/2004/07/DTO_Licenta")]
+    [System.SerializableAttribute()]
+    public partial class InternDTO : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClientLicenta_GUI.ServiceReference1.ApplicantDTO ApplicantField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int ApplicantIDField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClientLicenta_GUI.ServiceReference1.EmployeeDTO EmployeeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int EmployeeIDField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.DateTime EndDateField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int InternIDField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ObservationField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.DateTime StartDateField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClientLicenta_GUI.ServiceReference1.ApplicantDTO Applicant {
+            get {
+                return this.ApplicantField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ApplicantField, value) != true)) {
+                    this.ApplicantField = value;
+                    this.RaisePropertyChanged("Applicant");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int ApplicantID {
+            get {
+                return this.ApplicantIDField;
+            }
+            set {
+                if ((this.ApplicantIDField.Equals(value) != true)) {
+                    this.ApplicantIDField = value;
+                    this.RaisePropertyChanged("ApplicantID");
+                }
             }
         }
         
@@ -80,66 +298,226 @@ namespace ClientLicenta_GUI.ServiceReference1 {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public int LoginID {
+        public System.DateTime EndDate {
             get {
-                return this.LoginIDField;
+                return this.EndDateField;
             }
             set {
-                if ((this.LoginIDField.Equals(value) != true)) {
-                    this.LoginIDField = value;
-                    this.RaisePropertyChanged("LoginID");
+                if ((this.EndDateField.Equals(value) != true)) {
+                    this.EndDateField = value;
+                    this.RaisePropertyChanged("EndDate");
                 }
             }
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public ClientLicenta_GUI.ServiceReference1.NoteDTO Note {
+        public int InternID {
             get {
-                return this.NoteField;
+                return this.InternIDField;
             }
             set {
-                if ((object.ReferenceEquals(this.NoteField, value) != true)) {
-                    this.NoteField = value;
-                    this.RaisePropertyChanged("Note");
+                if ((this.InternIDField.Equals(value) != true)) {
+                    this.InternIDField = value;
+                    this.RaisePropertyChanged("InternID");
                 }
             }
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Password {
+        public string Observation {
             get {
-                return this.PasswordField;
+                return this.ObservationField;
             }
             set {
-                if ((object.ReferenceEquals(this.PasswordField, value) != true)) {
-                    this.PasswordField = value;
-                    this.RaisePropertyChanged("Password");
+                if ((object.ReferenceEquals(this.ObservationField, value) != true)) {
+                    this.ObservationField = value;
+                    this.RaisePropertyChanged("Observation");
                 }
             }
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public int SecurityLevel {
+        public System.DateTime StartDate {
             get {
-                return this.SecurityLevelField;
+                return this.StartDateField;
             }
             set {
-                if ((this.SecurityLevelField.Equals(value) != true)) {
-                    this.SecurityLevelField = value;
-                    this.RaisePropertyChanged("SecurityLevel");
+                if ((this.StartDateField.Equals(value) != true)) {
+                    this.StartDateField = value;
+                    this.RaisePropertyChanged("StartDate");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="RegistrationDTO", Namespace="http://schemas.datacontract.org/2004/07/DTO_Licenta")]
+    [System.SerializableAttribute()]
+    public partial class RegistrationDTO : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClientLicenta_GUI.ServiceReference1.ApplicantDTO ApplicantField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int ApplicantIDField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.DateTime AppliedDateField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClientLicenta_GUI.ServiceReference1.DepartmentDTO DepartmentField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<int> DepartmentIDField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private ClientLicenta_GUI.ServiceReference1.JobDTO JobField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Nullable<int> JobIDField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ObservationField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int RegistrationIDField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClientLicenta_GUI.ServiceReference1.ApplicantDTO Applicant {
+            get {
+                return this.ApplicantField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ApplicantField, value) != true)) {
+                    this.ApplicantField = value;
+                    this.RaisePropertyChanged("Applicant");
                 }
             }
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Username {
+        public int ApplicantID {
             get {
-                return this.UsernameField;
+                return this.ApplicantIDField;
             }
             set {
-                if ((object.ReferenceEquals(this.UsernameField, value) != true)) {
-                    this.UsernameField = value;
-                    this.RaisePropertyChanged("Username");
+                if ((this.ApplicantIDField.Equals(value) != true)) {
+                    this.ApplicantIDField = value;
+                    this.RaisePropertyChanged("ApplicantID");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.DateTime AppliedDate {
+            get {
+                return this.AppliedDateField;
+            }
+            set {
+                if ((this.AppliedDateField.Equals(value) != true)) {
+                    this.AppliedDateField = value;
+                    this.RaisePropertyChanged("AppliedDate");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClientLicenta_GUI.ServiceReference1.DepartmentDTO Department {
+            get {
+                return this.DepartmentField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.DepartmentField, value) != true)) {
+                    this.DepartmentField = value;
+                    this.RaisePropertyChanged("Department");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<int> DepartmentID {
+            get {
+                return this.DepartmentIDField;
+            }
+            set {
+                if ((this.DepartmentIDField.Equals(value) != true)) {
+                    this.DepartmentIDField = value;
+                    this.RaisePropertyChanged("DepartmentID");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public ClientLicenta_GUI.ServiceReference1.JobDTO Job {
+            get {
+                return this.JobField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.JobField, value) != true)) {
+                    this.JobField = value;
+                    this.RaisePropertyChanged("Job");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<int> JobID {
+            get {
+                return this.JobIDField;
+            }
+            set {
+                if ((this.JobIDField.Equals(value) != true)) {
+                    this.JobIDField = value;
+                    this.RaisePropertyChanged("JobID");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Observation {
+            get {
+                return this.ObservationField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ObservationField, value) != true)) {
+                    this.ObservationField = value;
+                    this.RaisePropertyChanged("Observation");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int RegistrationID {
+            get {
+                return this.RegistrationIDField;
+            }
+            set {
+                if ((this.RegistrationIDField.Equals(value) != true)) {
+                    this.RegistrationIDField = value;
+                    this.RaisePropertyChanged("RegistrationID");
                 }
             }
         }
@@ -553,115 +931,6 @@ namespace ClientLicenta_GUI.ServiceReference1 {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="NoteDTO", Namespace="http://schemas.datacontract.org/2004/07/DTO_Licenta")]
-    [System.SerializableAttribute()]
-    public partial class NoteDTO : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.DateTime DateField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string DescriptionField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private ClientLicenta_GUI.ServiceReference1.LoginDTO LoginField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int NoteIDField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int UserIDField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.DateTime Date {
-            get {
-                return this.DateField;
-            }
-            set {
-                if ((this.DateField.Equals(value) != true)) {
-                    this.DateField = value;
-                    this.RaisePropertyChanged("Date");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Description {
-            get {
-                return this.DescriptionField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.DescriptionField, value) != true)) {
-                    this.DescriptionField = value;
-                    this.RaisePropertyChanged("Description");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public ClientLicenta_GUI.ServiceReference1.LoginDTO Login {
-            get {
-                return this.LoginField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.LoginField, value) != true)) {
-                    this.LoginField = value;
-                    this.RaisePropertyChanged("Login");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int NoteID {
-            get {
-                return this.NoteIDField;
-            }
-            set {
-                if ((this.NoteIDField.Equals(value) != true)) {
-                    this.NoteIDField = value;
-                    this.RaisePropertyChanged("NoteID");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int UserID {
-            get {
-                return this.UserIDField;
-            }
-            set {
-                if ((this.UserIDField.Equals(value) != true)) {
-                    this.UserIDField = value;
-                    this.RaisePropertyChanged("UserID");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="DepartmentDTO", Namespace="http://schemas.datacontract.org/2004/07/DTO_Licenta")]
     [System.SerializableAttribute()]
     public partial class DepartmentDTO : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
@@ -989,18 +1258,12 @@ namespace ClientLicenta_GUI.ServiceReference1 {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="InternDTO", Namespace="http://schemas.datacontract.org/2004/07/DTO_Licenta")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="LoginDTO", Namespace="http://schemas.datacontract.org/2004/07/DTO_Licenta")]
     [System.SerializableAttribute()]
-    public partial class InternDTO : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+    public partial class LoginDTO : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
         [System.NonSerializedAttribute()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private ClientLicenta_GUI.ServiceReference1.ApplicantDTO ApplicantField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int ApplicantIDField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private ClientLicenta_GUI.ServiceReference1.EmployeeDTO EmployeeField;
@@ -1009,16 +1272,19 @@ namespace ClientLicenta_GUI.ServiceReference1 {
         private int EmployeeIDField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.DateTime EndDateField;
+        private int LoginIDField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int InternIDField;
+        private ClientLicenta_GUI.ServiceReference1.NoteDTO NoteField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string ObservationField;
+        private string PasswordField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.DateTime StartDateField;
+        private int SecurityLevelField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string UsernameField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
@@ -1027,32 +1293,6 @@ namespace ClientLicenta_GUI.ServiceReference1 {
             }
             set {
                 this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public ClientLicenta_GUI.ServiceReference1.ApplicantDTO Applicant {
-            get {
-                return this.ApplicantField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.ApplicantField, value) != true)) {
-                    this.ApplicantField = value;
-                    this.RaisePropertyChanged("Applicant");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int ApplicantID {
-            get {
-                return this.ApplicantIDField;
-            }
-            set {
-                if ((this.ApplicantIDField.Equals(value) != true)) {
-                    this.ApplicantIDField = value;
-                    this.RaisePropertyChanged("ApplicantID");
-                }
             }
         }
         
@@ -1083,53 +1323,66 @@ namespace ClientLicenta_GUI.ServiceReference1 {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.DateTime EndDate {
+        public int LoginID {
             get {
-                return this.EndDateField;
+                return this.LoginIDField;
             }
             set {
-                if ((this.EndDateField.Equals(value) != true)) {
-                    this.EndDateField = value;
-                    this.RaisePropertyChanged("EndDate");
+                if ((this.LoginIDField.Equals(value) != true)) {
+                    this.LoginIDField = value;
+                    this.RaisePropertyChanged("LoginID");
                 }
             }
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public int InternID {
+        public ClientLicenta_GUI.ServiceReference1.NoteDTO Note {
             get {
-                return this.InternIDField;
+                return this.NoteField;
             }
             set {
-                if ((this.InternIDField.Equals(value) != true)) {
-                    this.InternIDField = value;
-                    this.RaisePropertyChanged("InternID");
+                if ((object.ReferenceEquals(this.NoteField, value) != true)) {
+                    this.NoteField = value;
+                    this.RaisePropertyChanged("Note");
                 }
             }
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Observation {
+        public string Password {
             get {
-                return this.ObservationField;
+                return this.PasswordField;
             }
             set {
-                if ((object.ReferenceEquals(this.ObservationField, value) != true)) {
-                    this.ObservationField = value;
-                    this.RaisePropertyChanged("Observation");
+                if ((object.ReferenceEquals(this.PasswordField, value) != true)) {
+                    this.PasswordField = value;
+                    this.RaisePropertyChanged("Password");
                 }
             }
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.DateTime StartDate {
+        public int SecurityLevel {
             get {
-                return this.StartDateField;
+                return this.SecurityLevelField;
             }
             set {
-                if ((this.StartDateField.Equals(value) != true)) {
-                    this.StartDateField = value;
-                    this.RaisePropertyChanged("StartDate");
+                if ((this.SecurityLevelField.Equals(value) != true)) {
+                    this.SecurityLevelField = value;
+                    this.RaisePropertyChanged("SecurityLevel");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Username {
+            get {
+                return this.UsernameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.UsernameField, value) != true)) {
+                    this.UsernameField = value;
+                    this.RaisePropertyChanged("Username");
                 }
             }
         }
@@ -1572,39 +1825,27 @@ namespace ClientLicenta_GUI.ServiceReference1 {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="RegistrationDTO", Namespace="http://schemas.datacontract.org/2004/07/DTO_Licenta")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="NoteDTO", Namespace="http://schemas.datacontract.org/2004/07/DTO_Licenta")]
     [System.SerializableAttribute()]
-    public partial class RegistrationDTO : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+    public partial class NoteDTO : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
         
         [System.NonSerializedAttribute()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private ClientLicenta_GUI.ServiceReference1.ApplicantDTO ApplicantField;
+        private System.DateTime DateField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int ApplicantIDField;
+        private string DescriptionField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.DateTime AppliedDateField;
+        private ClientLicenta_GUI.ServiceReference1.LoginDTO LoginField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private ClientLicenta_GUI.ServiceReference1.DepartmentDTO DepartmentField;
+        private int NoteIDField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Nullable<int> DepartmentIDField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private ClientLicenta_GUI.ServiceReference1.JobDTO JobField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.Nullable<int> JobIDField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string ObservationField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int RegistrationIDField;
+        private int UserIDField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
@@ -1617,307 +1858,66 @@ namespace ClientLicenta_GUI.ServiceReference1 {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public ClientLicenta_GUI.ServiceReference1.ApplicantDTO Applicant {
+        public System.DateTime Date {
             get {
-                return this.ApplicantField;
+                return this.DateField;
             }
             set {
-                if ((object.ReferenceEquals(this.ApplicantField, value) != true)) {
-                    this.ApplicantField = value;
-                    this.RaisePropertyChanged("Applicant");
+                if ((this.DateField.Equals(value) != true)) {
+                    this.DateField = value;
+                    this.RaisePropertyChanged("Date");
                 }
             }
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public int ApplicantID {
+        public string Description {
             get {
-                return this.ApplicantIDField;
+                return this.DescriptionField;
             }
             set {
-                if ((this.ApplicantIDField.Equals(value) != true)) {
-                    this.ApplicantIDField = value;
-                    this.RaisePropertyChanged("ApplicantID");
+                if ((object.ReferenceEquals(this.DescriptionField, value) != true)) {
+                    this.DescriptionField = value;
+                    this.RaisePropertyChanged("Description");
                 }
             }
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.DateTime AppliedDate {
+        public ClientLicenta_GUI.ServiceReference1.LoginDTO Login {
             get {
-                return this.AppliedDateField;
+                return this.LoginField;
             }
             set {
-                if ((this.AppliedDateField.Equals(value) != true)) {
-                    this.AppliedDateField = value;
-                    this.RaisePropertyChanged("AppliedDate");
+                if ((object.ReferenceEquals(this.LoginField, value) != true)) {
+                    this.LoginField = value;
+                    this.RaisePropertyChanged("Login");
                 }
             }
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public ClientLicenta_GUI.ServiceReference1.DepartmentDTO Department {
+        public int NoteID {
             get {
-                return this.DepartmentField;
+                return this.NoteIDField;
             }
             set {
-                if ((object.ReferenceEquals(this.DepartmentField, value) != true)) {
-                    this.DepartmentField = value;
-                    this.RaisePropertyChanged("Department");
+                if ((this.NoteIDField.Equals(value) != true)) {
+                    this.NoteIDField = value;
+                    this.RaisePropertyChanged("NoteID");
                 }
             }
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Nullable<int> DepartmentID {
+        public int UserID {
             get {
-                return this.DepartmentIDField;
+                return this.UserIDField;
             }
             set {
-                if ((this.DepartmentIDField.Equals(value) != true)) {
-                    this.DepartmentIDField = value;
-                    this.RaisePropertyChanged("DepartmentID");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public ClientLicenta_GUI.ServiceReference1.JobDTO Job {
-            get {
-                return this.JobField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.JobField, value) != true)) {
-                    this.JobField = value;
-                    this.RaisePropertyChanged("Job");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.Nullable<int> JobID {
-            get {
-                return this.JobIDField;
-            }
-            set {
-                if ((this.JobIDField.Equals(value) != true)) {
-                    this.JobIDField = value;
-                    this.RaisePropertyChanged("JobID");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Observation {
-            get {
-                return this.ObservationField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.ObservationField, value) != true)) {
-                    this.ObservationField = value;
-                    this.RaisePropertyChanged("Observation");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int RegistrationID {
-            get {
-                return this.RegistrationIDField;
-            }
-            set {
-                if ((this.RegistrationIDField.Equals(value) != true)) {
-                    this.RegistrationIDField = value;
-                    this.RaisePropertyChanged("RegistrationID");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="ApplicantDTO", Namespace="http://schemas.datacontract.org/2004/07/DTO_Licenta")]
-    [System.SerializableAttribute()]
-    public partial class ApplicantDTO : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private int ApplicantIDField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private System.DateTime BirthDateField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string FirstNameField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private ClientLicenta_GUI.ServiceReference1.InternDTO[] InternsField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string LastNameField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string MailField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string NationalityField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string PhoneNumberField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private ClientLicenta_GUI.ServiceReference1.RegistrationDTO[] RegistrationsField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string StudiesField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int ApplicantID {
-            get {
-                return this.ApplicantIDField;
-            }
-            set {
-                if ((this.ApplicantIDField.Equals(value) != true)) {
-                    this.ApplicantIDField = value;
-                    this.RaisePropertyChanged("ApplicantID");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public System.DateTime BirthDate {
-            get {
-                return this.BirthDateField;
-            }
-            set {
-                if ((this.BirthDateField.Equals(value) != true)) {
-                    this.BirthDateField = value;
-                    this.RaisePropertyChanged("BirthDate");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string FirstName {
-            get {
-                return this.FirstNameField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.FirstNameField, value) != true)) {
-                    this.FirstNameField = value;
-                    this.RaisePropertyChanged("FirstName");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public ClientLicenta_GUI.ServiceReference1.InternDTO[] Interns {
-            get {
-                return this.InternsField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.InternsField, value) != true)) {
-                    this.InternsField = value;
-                    this.RaisePropertyChanged("Interns");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string LastName {
-            get {
-                return this.LastNameField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.LastNameField, value) != true)) {
-                    this.LastNameField = value;
-                    this.RaisePropertyChanged("LastName");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Mail {
-            get {
-                return this.MailField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.MailField, value) != true)) {
-                    this.MailField = value;
-                    this.RaisePropertyChanged("Mail");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Nationality {
-            get {
-                return this.NationalityField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.NationalityField, value) != true)) {
-                    this.NationalityField = value;
-                    this.RaisePropertyChanged("Nationality");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string PhoneNumber {
-            get {
-                return this.PhoneNumberField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.PhoneNumberField, value) != true)) {
-                    this.PhoneNumberField = value;
-                    this.RaisePropertyChanged("PhoneNumber");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public ClientLicenta_GUI.ServiceReference1.RegistrationDTO[] Registrations {
-            get {
-                return this.RegistrationsField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.RegistrationsField, value) != true)) {
-                    this.RegistrationsField = value;
-                    this.RaisePropertyChanged("Registrations");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Studies {
-            get {
-                return this.StudiesField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.StudiesField, value) != true)) {
-                    this.StudiesField = value;
-                    this.RaisePropertyChanged("Studies");
+                if ((this.UserIDField.Equals(value) != true)) {
+                    this.UserIDField = value;
+                    this.RaisePropertyChanged("UserID");
                 }
             }
         }
@@ -2244,211 +2244,137 @@ namespace ClientLicenta_GUI.ServiceReference1 {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference1.IService1")]
-    public interface IService1 {
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference1.IReadService")]
+    public interface IReadService {
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/Authenticate", ReplyAction="http://tempuri.org/IService1/AuthenticateResponse")]
-        ClientLicenta_GUI.ServiceReference1.LoginDTO Authenticate(string username, string password);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/Authenticate", ReplyAction="http://tempuri.org/IService1/AuthenticateResponse")]
-        System.Threading.Tasks.Task<ClientLicenta_GUI.ServiceReference1.LoginDTO> AuthenticateAsync(string username, string password);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/FillApplicantGrid", ReplyAction="http://tempuri.org/IService1/FillApplicantGridResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IReadService/FillApplicantGrid", ReplyAction="http://tempuri.org/IReadService/FillApplicantGridResponse")]
         ClientLicenta_GUI.ServiceReference1.ApplicantDTO[] FillApplicantGrid();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/FillApplicantGrid", ReplyAction="http://tempuri.org/IService1/FillApplicantGridResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IReadService/FillApplicantGrid", ReplyAction="http://tempuri.org/IReadService/FillApplicantGridResponse")]
         System.Threading.Tasks.Task<ClientLicenta_GUI.ServiceReference1.ApplicantDTO[]> FillApplicantGridAsync();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/FillEmployeeGrid", ReplyAction="http://tempuri.org/IService1/FillEmployeeGridResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IReadService/FillEmployeeGrid", ReplyAction="http://tempuri.org/IReadService/FillEmployeeGridResponse")]
         ClientLicenta_GUI.ServiceReference1.EmployeeDTO[] FillEmployeeGrid();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/FillEmployeeGrid", ReplyAction="http://tempuri.org/IService1/FillEmployeeGridResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IReadService/FillEmployeeGrid", ReplyAction="http://tempuri.org/IReadService/FillEmployeeGridResponse")]
         System.Threading.Tasks.Task<ClientLicenta_GUI.ServiceReference1.EmployeeDTO[]> FillEmployeeGridAsync();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/FillCustomerGrid", ReplyAction="http://tempuri.org/IService1/FillCustomerGridResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IReadService/FillCustomerGrid", ReplyAction="http://tempuri.org/IReadService/FillCustomerGridResponse")]
         ClientLicenta_GUI.ServiceReference1.CustomerDTO[] FillCustomerGrid();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/FillCustomerGrid", ReplyAction="http://tempuri.org/IService1/FillCustomerGridResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IReadService/FillCustomerGrid", ReplyAction="http://tempuri.org/IReadService/FillCustomerGridResponse")]
         System.Threading.Tasks.Task<ClientLicenta_GUI.ServiceReference1.CustomerDTO[]> FillCustomerGridAsync();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/FillProjectGrid", ReplyAction="http://tempuri.org/IService1/FillProjectGridResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IReadService/FillProjectGrid", ReplyAction="http://tempuri.org/IReadService/FillProjectGridResponse")]
         ClientLicenta_GUI.ServiceReference1.ProjectDTO[] FillProjectGrid();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/FillProjectGrid", ReplyAction="http://tempuri.org/IService1/FillProjectGridResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IReadService/FillProjectGrid", ReplyAction="http://tempuri.org/IReadService/FillProjectGridResponse")]
         System.Threading.Tasks.Task<ClientLicenta_GUI.ServiceReference1.ProjectDTO[]> FillProjectGridAsync();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/FillInternGrid", ReplyAction="http://tempuri.org/IService1/FillInternGridResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IReadService/FillInternGrid", ReplyAction="http://tempuri.org/IReadService/FillInternGridResponse")]
         ClientLicenta_GUI.ServiceReference1.InternDTO[] FillInternGrid();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/FillInternGrid", ReplyAction="http://tempuri.org/IService1/FillInternGridResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IReadService/FillInternGrid", ReplyAction="http://tempuri.org/IReadService/FillInternGridResponse")]
         System.Threading.Tasks.Task<ClientLicenta_GUI.ServiceReference1.InternDTO[]> FillInternGridAsync();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/FillTaskGrid", ReplyAction="http://tempuri.org/IService1/FillTaskGridResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IReadService/FillTaskGrid", ReplyAction="http://tempuri.org/IReadService/FillTaskGridResponse")]
         ClientLicenta_GUI.ServiceReference1.TaskDTO[] FillTaskGrid(int userID);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/FillTaskGrid", ReplyAction="http://tempuri.org/IService1/FillTaskGridResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IReadService/FillTaskGrid", ReplyAction="http://tempuri.org/IReadService/FillTaskGridResponse")]
         System.Threading.Tasks.Task<ClientLicenta_GUI.ServiceReference1.TaskDTO[]> FillTaskGridAsync(int userID);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/FillHolidaysGrid", ReplyAction="http://tempuri.org/IService1/FillHolidaysGridResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IReadService/FillHolidaysGrid", ReplyAction="http://tempuri.org/IReadService/FillHolidaysGridResponse")]
         ClientLicenta_GUI.ServiceReference1.HolidayDTO[] FillHolidaysGrid();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/FillHolidaysGrid", ReplyAction="http://tempuri.org/IService1/FillHolidaysGridResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IReadService/FillHolidaysGrid", ReplyAction="http://tempuri.org/IReadService/FillHolidaysGridResponse")]
         System.Threading.Tasks.Task<ClientLicenta_GUI.ServiceReference1.HolidayDTO[]> FillHolidaysGridAsync();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/FillProjectEmployeesGrid", ReplyAction="http://tempuri.org/IService1/FillProjectEmployeesGridResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IReadService/FillProjectEmployeesGrid", ReplyAction="http://tempuri.org/IReadService/FillProjectEmployeesGridResponse")]
         ClientLicenta_GUI.ServiceReference1.EmployeeDTO[] FillProjectEmployeesGrid(int managerID);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/FillProjectEmployeesGrid", ReplyAction="http://tempuri.org/IService1/FillProjectEmployeesGridResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IReadService/FillProjectEmployeesGrid", ReplyAction="http://tempuri.org/IReadService/FillProjectEmployeesGridResponse")]
         System.Threading.Tasks.Task<ClientLicenta_GUI.ServiceReference1.EmployeeDTO[]> FillProjectEmployeesGridAsync(int managerID);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/FillNoteListBox", ReplyAction="http://tempuri.org/IService1/FillNoteListBoxResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IReadService/FillNoteListBox", ReplyAction="http://tempuri.org/IReadService/FillNoteListBoxResponse")]
         ClientLicenta_GUI.ServiceReference1.NoteDTO[] FillNoteListBox(int userID);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/FillNoteListBox", ReplyAction="http://tempuri.org/IService1/FillNoteListBoxResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IReadService/FillNoteListBox", ReplyAction="http://tempuri.org/IReadService/FillNoteListBoxResponse")]
         System.Threading.Tasks.Task<ClientLicenta_GUI.ServiceReference1.NoteDTO[]> FillNoteListBoxAsync(int userID);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/FillNewsBox", ReplyAction="http://tempuri.org/IService1/FillNewsBoxResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IReadService/FillNewsBox", ReplyAction="http://tempuri.org/IReadService/FillNewsBoxResponse")]
         ClientLicenta_GUI.ServiceReference1.NewsDTO[] FillNewsBox();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/FillNewsBox", ReplyAction="http://tempuri.org/IService1/FillNewsBoxResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IReadService/FillNewsBox", ReplyAction="http://tempuri.org/IReadService/FillNewsBoxResponse")]
         System.Threading.Tasks.Task<ClientLicenta_GUI.ServiceReference1.NewsDTO[]> FillNewsBoxAsync();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/FillProjectComboBox", ReplyAction="http://tempuri.org/IService1/FillProjectComboBoxResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IReadService/FillProjectComboBox", ReplyAction="http://tempuri.org/IReadService/FillProjectComboBoxResponse")]
         ClientLicenta_GUI.ServiceReference1.ProjectDTO[] FillProjectComboBox(int userID);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/FillProjectComboBox", ReplyAction="http://tempuri.org/IService1/FillProjectComboBoxResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IReadService/FillProjectComboBox", ReplyAction="http://tempuri.org/IReadService/FillProjectComboBoxResponse")]
         System.Threading.Tasks.Task<ClientLicenta_GUI.ServiceReference1.ProjectDTO[]> FillProjectComboBoxAsync(int userID);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/FillComboBoxDepartment", ReplyAction="http://tempuri.org/IService1/FillComboBoxDepartmentResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IReadService/FillComboBoxDepartment", ReplyAction="http://tempuri.org/IReadService/FillComboBoxDepartmentResponse")]
         ClientLicenta_GUI.ServiceReference1.DepartmentDTO[] FillComboBoxDepartment();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/FillComboBoxDepartment", ReplyAction="http://tempuri.org/IService1/FillComboBoxDepartmentResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IReadService/FillComboBoxDepartment", ReplyAction="http://tempuri.org/IReadService/FillComboBoxDepartmentResponse")]
         System.Threading.Tasks.Task<ClientLicenta_GUI.ServiceReference1.DepartmentDTO[]> FillComboBoxDepartmentAsync();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/FillComboBoxJob", ReplyAction="http://tempuri.org/IService1/FillComboBoxJobResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IReadService/FillComboBoxJob", ReplyAction="http://tempuri.org/IReadService/FillComboBoxJobResponse")]
         ClientLicenta_GUI.ServiceReference1.JobDTO[] FillComboBoxJob();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/FillComboBoxJob", ReplyAction="http://tempuri.org/IService1/FillComboBoxJobResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IReadService/FillComboBoxJob", ReplyAction="http://tempuri.org/IReadService/FillComboBoxJobResponse")]
         System.Threading.Tasks.Task<ClientLicenta_GUI.ServiceReference1.JobDTO[]> FillComboBoxJobAsync();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/FillComboBoxApplicant", ReplyAction="http://tempuri.org/IService1/FillComboBoxApplicantResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IReadService/FillComboBoxApplicant", ReplyAction="http://tempuri.org/IReadService/FillComboBoxApplicantResponse")]
         ClientLicenta_GUI.ServiceReference1.ApplicantDTO[] FillComboBoxApplicant();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/FillComboBoxApplicant", ReplyAction="http://tempuri.org/IService1/FillComboBoxApplicantResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IReadService/FillComboBoxApplicant", ReplyAction="http://tempuri.org/IReadService/FillComboBoxApplicantResponse")]
         System.Threading.Tasks.Task<ClientLicenta_GUI.ServiceReference1.ApplicantDTO[]> FillComboBoxApplicantAsync();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/FillComboBoxEmployee", ReplyAction="http://tempuri.org/IService1/FillComboBoxEmployeeResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IReadService/FillComboBoxEmployee", ReplyAction="http://tempuri.org/IReadService/FillComboBoxEmployeeResponse")]
         ClientLicenta_GUI.ServiceReference1.EmployeeDTO[] FillComboBoxEmployee();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/FillComboBoxEmployee", ReplyAction="http://tempuri.org/IService1/FillComboBoxEmployeeResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IReadService/FillComboBoxEmployee", ReplyAction="http://tempuri.org/IReadService/FillComboBoxEmployeeResponse")]
         System.Threading.Tasks.Task<ClientLicenta_GUI.ServiceReference1.EmployeeDTO[]> FillComboBoxEmployeeAsync();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/FillComboBoxCustomer", ReplyAction="http://tempuri.org/IService1/FillComboBoxCustomerResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IReadService/FillComboBoxCustomer", ReplyAction="http://tempuri.org/IReadService/FillComboBoxCustomerResponse")]
         ClientLicenta_GUI.ServiceReference1.CustomerDTO[] FillComboBoxCustomer();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/FillComboBoxCustomer", ReplyAction="http://tempuri.org/IService1/FillComboBoxCustomerResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IReadService/FillComboBoxCustomer", ReplyAction="http://tempuri.org/IReadService/FillComboBoxCustomerResponse")]
         System.Threading.Tasks.Task<ClientLicenta_GUI.ServiceReference1.CustomerDTO[]> FillComboBoxCustomerAsync();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/FillComboBoxProjectManager", ReplyAction="http://tempuri.org/IService1/FillComboBoxProjectManagerResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IReadService/FillComboBoxProjectManager", ReplyAction="http://tempuri.org/IReadService/FillComboBoxProjectManagerResponse")]
         ClientLicenta_GUI.ServiceReference1.EmployeeDTO[] FillComboBoxProjectManager(int departmentID);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/FillComboBoxProjectManager", ReplyAction="http://tempuri.org/IService1/FillComboBoxProjectManagerResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IReadService/FillComboBoxProjectManager", ReplyAction="http://tempuri.org/IReadService/FillComboBoxProjectManagerResponse")]
         System.Threading.Tasks.Task<ClientLicenta_GUI.ServiceReference1.EmployeeDTO[]> FillComboBoxProjectManagerAsync(int departmentID);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/InsertApplicant", ReplyAction="http://tempuri.org/IService1/InsertApplicantResponse")]
-        bool InsertApplicant(ClientLicenta_GUI.ServiceReference1.ApplicantDTO applicantDTO, string job, string department, string observation);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/InsertApplicant", ReplyAction="http://tempuri.org/IService1/InsertApplicantResponse")]
-        System.Threading.Tasks.Task<bool> InsertApplicantAsync(ClientLicenta_GUI.ServiceReference1.ApplicantDTO applicantDTO, string job, string department, string observation);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/InsertEmployee", ReplyAction="http://tempuri.org/IService1/InsertEmployeeResponse")]
-        bool InsertEmployee(ClientLicenta_GUI.ServiceReference1.EmployeeDTO employeeDTO, ClientLicenta_GUI.ServiceReference1.LoginDTO loginDTO);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/InsertEmployee", ReplyAction="http://tempuri.org/IService1/InsertEmployeeResponse")]
-        System.Threading.Tasks.Task<bool> InsertEmployeeAsync(ClientLicenta_GUI.ServiceReference1.EmployeeDTO employeeDTO, ClientLicenta_GUI.ServiceReference1.LoginDTO loginDTO);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/InsertCustomer", ReplyAction="http://tempuri.org/IService1/InsertCustomerResponse")]
-        bool InsertCustomer(ClientLicenta_GUI.ServiceReference1.CustomerDTO customerDTO);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/InsertCustomer", ReplyAction="http://tempuri.org/IService1/InsertCustomerResponse")]
-        System.Threading.Tasks.Task<bool> InsertCustomerAsync(ClientLicenta_GUI.ServiceReference1.CustomerDTO customerDTO);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/InsertProject", ReplyAction="http://tempuri.org/IService1/InsertProjectResponse")]
-        bool InsertProject(ClientLicenta_GUI.ServiceReference1.ProjectDTO projectDTO);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/InsertProject", ReplyAction="http://tempuri.org/IService1/InsertProjectResponse")]
-        System.Threading.Tasks.Task<bool> InsertProjectAsync(ClientLicenta_GUI.ServiceReference1.ProjectDTO projectDTO);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/InsertIntern", ReplyAction="http://tempuri.org/IService1/InsertInternResponse")]
-        bool InsertIntern(ClientLicenta_GUI.ServiceReference1.InternDTO internDTO);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/InsertIntern", ReplyAction="http://tempuri.org/IService1/InsertInternResponse")]
-        System.Threading.Tasks.Task<bool> InsertInternAsync(ClientLicenta_GUI.ServiceReference1.InternDTO internDTO);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/InsertNotes", ReplyAction="http://tempuri.org/IService1/InsertNotesResponse")]
-        bool InsertNotes(ClientLicenta_GUI.ServiceReference1.NoteDTO noteDTO);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/InsertNotes", ReplyAction="http://tempuri.org/IService1/InsertNotesResponse")]
-        System.Threading.Tasks.Task<bool> InsertNotesAsync(ClientLicenta_GUI.ServiceReference1.NoteDTO noteDTO);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/InsertHoliday", ReplyAction="http://tempuri.org/IService1/InsertHolidayResponse")]
-        bool InsertHoliday(ClientLicenta_GUI.ServiceReference1.HolidayDTO holidayDTO);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/InsertHoliday", ReplyAction="http://tempuri.org/IService1/InsertHolidayResponse")]
-        System.Threading.Tasks.Task<bool> InsertHolidayAsync(ClientLicenta_GUI.ServiceReference1.HolidayDTO holidayDTO);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/InsertTask", ReplyAction="http://tempuri.org/IService1/InsertTaskResponse")]
-        bool InsertTask(string title, string observation, int employeeID, int managerID);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/InsertTask", ReplyAction="http://tempuri.org/IService1/InsertTaskResponse")]
-        System.Threading.Tasks.Task<bool> InsertTaskAsync(string title, string observation, int employeeID, int managerID);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/UpdateProjectStatus", ReplyAction="http://tempuri.org/IService1/UpdateProjectStatusResponse")]
-        void UpdateProjectStatus(double status, int projectID);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/UpdateProjectStatus", ReplyAction="http://tempuri.org/IService1/UpdateProjectStatusResponse")]
-        System.Threading.Tasks.Task UpdateProjectStatusAsync(double status, int projectID);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/UpdateStatusTask", ReplyAction="http://tempuri.org/IService1/UpdateStatusTaskResponse")]
-        bool UpdateStatusTask(ClientLicenta_GUI.ServiceReference1.TaskDTO tasks);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/UpdateStatusTask", ReplyAction="http://tempuri.org/IService1/UpdateStatusTaskResponse")]
-        System.Threading.Tasks.Task<bool> UpdateStatusTaskAsync(ClientLicenta_GUI.ServiceReference1.TaskDTO tasks);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface IService1Channel : ClientLicenta_GUI.ServiceReference1.IService1, System.ServiceModel.IClientChannel {
+    public interface IReadServiceChannel : ClientLicenta_GUI.ServiceReference1.IReadService, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class Service1Client : System.ServiceModel.ClientBase<ClientLicenta_GUI.ServiceReference1.IService1>, ClientLicenta_GUI.ServiceReference1.IService1 {
+    public partial class ReadServiceClient : System.ServiceModel.ClientBase<ClientLicenta_GUI.ServiceReference1.IReadService>, ClientLicenta_GUI.ServiceReference1.IReadService {
         
-        public Service1Client() {
+        public ReadServiceClient() {
         }
         
-        public Service1Client(string endpointConfigurationName) : 
+        public ReadServiceClient(string endpointConfigurationName) : 
                 base(endpointConfigurationName) {
         }
         
-        public Service1Client(string endpointConfigurationName, string remoteAddress) : 
+        public ReadServiceClient(string endpointConfigurationName, string remoteAddress) : 
                 base(endpointConfigurationName, remoteAddress) {
         }
         
-        public Service1Client(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
+        public ReadServiceClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(endpointConfigurationName, remoteAddress) {
         }
         
-        public Service1Client(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+        public ReadServiceClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(binding, remoteAddress) {
-        }
-        
-        public ClientLicenta_GUI.ServiceReference1.LoginDTO Authenticate(string username, string password) {
-            return base.Channel.Authenticate(username, password);
-        }
-        
-        public System.Threading.Tasks.Task<ClientLicenta_GUI.ServiceReference1.LoginDTO> AuthenticateAsync(string username, string password) {
-            return base.Channel.AuthenticateAsync(username, password);
         }
         
         public ClientLicenta_GUI.ServiceReference1.ApplicantDTO[] FillApplicantGrid() {
@@ -2585,6 +2511,113 @@ namespace ClientLicenta_GUI.ServiceReference1 {
         
         public System.Threading.Tasks.Task<ClientLicenta_GUI.ServiceReference1.EmployeeDTO[]> FillComboBoxProjectManagerAsync(int departmentID) {
             return base.Channel.FillComboBoxProjectManagerAsync(departmentID);
+        }
+    }
+    
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference1.IService1")]
+    public interface IService1 {
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/Authenticate", ReplyAction="http://tempuri.org/IService1/AuthenticateResponse")]
+        ClientLicenta_GUI.ServiceReference1.LoginDTO Authenticate(string username, string password);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/Authenticate", ReplyAction="http://tempuri.org/IService1/AuthenticateResponse")]
+        System.Threading.Tasks.Task<ClientLicenta_GUI.ServiceReference1.LoginDTO> AuthenticateAsync(string username, string password);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/InsertApplicant", ReplyAction="http://tempuri.org/IService1/InsertApplicantResponse")]
+        bool InsertApplicant(ClientLicenta_GUI.ServiceReference1.ApplicantDTO applicantDTO, string job, string department, string observation);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/InsertApplicant", ReplyAction="http://tempuri.org/IService1/InsertApplicantResponse")]
+        System.Threading.Tasks.Task<bool> InsertApplicantAsync(ClientLicenta_GUI.ServiceReference1.ApplicantDTO applicantDTO, string job, string department, string observation);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/InsertEmployee", ReplyAction="http://tempuri.org/IService1/InsertEmployeeResponse")]
+        bool InsertEmployee(ClientLicenta_GUI.ServiceReference1.EmployeeDTO employeeDTO, ClientLicenta_GUI.ServiceReference1.LoginDTO loginDTO);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/InsertEmployee", ReplyAction="http://tempuri.org/IService1/InsertEmployeeResponse")]
+        System.Threading.Tasks.Task<bool> InsertEmployeeAsync(ClientLicenta_GUI.ServiceReference1.EmployeeDTO employeeDTO, ClientLicenta_GUI.ServiceReference1.LoginDTO loginDTO);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/InsertCustomer", ReplyAction="http://tempuri.org/IService1/InsertCustomerResponse")]
+        bool InsertCustomer(ClientLicenta_GUI.ServiceReference1.CustomerDTO customerDTO);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/InsertCustomer", ReplyAction="http://tempuri.org/IService1/InsertCustomerResponse")]
+        System.Threading.Tasks.Task<bool> InsertCustomerAsync(ClientLicenta_GUI.ServiceReference1.CustomerDTO customerDTO);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/InsertProject", ReplyAction="http://tempuri.org/IService1/InsertProjectResponse")]
+        bool InsertProject(ClientLicenta_GUI.ServiceReference1.ProjectDTO projectDTO);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/InsertProject", ReplyAction="http://tempuri.org/IService1/InsertProjectResponse")]
+        System.Threading.Tasks.Task<bool> InsertProjectAsync(ClientLicenta_GUI.ServiceReference1.ProjectDTO projectDTO);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/InsertIntern", ReplyAction="http://tempuri.org/IService1/InsertInternResponse")]
+        bool InsertIntern(ClientLicenta_GUI.ServiceReference1.InternDTO internDTO);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/InsertIntern", ReplyAction="http://tempuri.org/IService1/InsertInternResponse")]
+        System.Threading.Tasks.Task<bool> InsertInternAsync(ClientLicenta_GUI.ServiceReference1.InternDTO internDTO);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/InsertNotes", ReplyAction="http://tempuri.org/IService1/InsertNotesResponse")]
+        bool InsertNotes(ClientLicenta_GUI.ServiceReference1.NoteDTO noteDTO);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/InsertNotes", ReplyAction="http://tempuri.org/IService1/InsertNotesResponse")]
+        System.Threading.Tasks.Task<bool> InsertNotesAsync(ClientLicenta_GUI.ServiceReference1.NoteDTO noteDTO);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/InsertHoliday", ReplyAction="http://tempuri.org/IService1/InsertHolidayResponse")]
+        bool InsertHoliday(ClientLicenta_GUI.ServiceReference1.HolidayDTO holidayDTO);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/InsertHoliday", ReplyAction="http://tempuri.org/IService1/InsertHolidayResponse")]
+        System.Threading.Tasks.Task<bool> InsertHolidayAsync(ClientLicenta_GUI.ServiceReference1.HolidayDTO holidayDTO);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/InsertTask", ReplyAction="http://tempuri.org/IService1/InsertTaskResponse")]
+        bool InsertTask(string title, string observation, int employeeID, int managerID);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/InsertTask", ReplyAction="http://tempuri.org/IService1/InsertTaskResponse")]
+        System.Threading.Tasks.Task<bool> InsertTaskAsync(string title, string observation, int employeeID, int managerID);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/UpdateProjectStatus", ReplyAction="http://tempuri.org/IService1/UpdateProjectStatusResponse")]
+        void UpdateProjectStatus(double status, int projectID);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/UpdateProjectStatus", ReplyAction="http://tempuri.org/IService1/UpdateProjectStatusResponse")]
+        System.Threading.Tasks.Task UpdateProjectStatusAsync(double status, int projectID);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/UpdateStatusTask", ReplyAction="http://tempuri.org/IService1/UpdateStatusTaskResponse")]
+        bool UpdateStatusTask(ClientLicenta_GUI.ServiceReference1.TaskDTO tasks);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/UpdateStatusTask", ReplyAction="http://tempuri.org/IService1/UpdateStatusTaskResponse")]
+        System.Threading.Tasks.Task<bool> UpdateStatusTaskAsync(ClientLicenta_GUI.ServiceReference1.TaskDTO tasks);
+    }
+    
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    public interface IService1Channel : ClientLicenta_GUI.ServiceReference1.IService1, System.ServiceModel.IClientChannel {
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    public partial class Service1Client : System.ServiceModel.ClientBase<ClientLicenta_GUI.ServiceReference1.IService1>, ClientLicenta_GUI.ServiceReference1.IService1 {
+        
+        public Service1Client() {
+        }
+        
+        public Service1Client(string endpointConfigurationName) : 
+                base(endpointConfigurationName) {
+        }
+        
+        public Service1Client(string endpointConfigurationName, string remoteAddress) : 
+                base(endpointConfigurationName, remoteAddress) {
+        }
+        
+        public Service1Client(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
+                base(endpointConfigurationName, remoteAddress) {
+        }
+        
+        public Service1Client(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+                base(binding, remoteAddress) {
+        }
+        
+        public ClientLicenta_GUI.ServiceReference1.LoginDTO Authenticate(string username, string password) {
+            return base.Channel.Authenticate(username, password);
+        }
+        
+        public System.Threading.Tasks.Task<ClientLicenta_GUI.ServiceReference1.LoginDTO> AuthenticateAsync(string username, string password) {
+            return base.Channel.AuthenticateAsync(username, password);
         }
         
         public bool InsertApplicant(ClientLicenta_GUI.ServiceReference1.ApplicantDTO applicantDTO, string job, string department, string observation) {

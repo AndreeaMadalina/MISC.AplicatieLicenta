@@ -1,21 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:import schemaLocation="http://localhost:37164/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/DTO_Licenta" />
-  <xs:element name="Authenticate">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
-      </xs:sequence>
-    </xs:complexType>
-  </xs:element>
-  <xs:element name="AuthenticateResponse">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/DTO_Licenta" minOccurs="0" name="AuthenticateResult" nillable="true" type="q1:LoginDTO" />
-      </xs:sequence>
-    </xs:complexType>
-  </xs:element>
   <xs:element name="FillApplicantGrid">
     <xs:complexType>
       <xs:sequence />
@@ -24,7 +9,7 @@
   <xs:element name="FillApplicantGridResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/DTO_Licenta" minOccurs="0" name="FillApplicantGridResult" nillable="true" type="q2:ArrayOfApplicantDTO" />
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/DTO_Licenta" minOccurs="0" name="FillApplicantGridResult" nillable="true" type="q1:ArrayOfApplicantDTO" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -36,7 +21,7 @@
   <xs:element name="FillEmployeeGridResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/DTO_Licenta" minOccurs="0" name="FillEmployeeGridResult" nillable="true" type="q3:ArrayOfEmployeeDTO" />
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/DTO_Licenta" minOccurs="0" name="FillEmployeeGridResult" nillable="true" type="q2:ArrayOfEmployeeDTO" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -48,7 +33,7 @@
   <xs:element name="FillCustomerGridResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/DTO_Licenta" minOccurs="0" name="FillCustomerGridResult" nillable="true" type="q4:ArrayOfCustomerDTO" />
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/DTO_Licenta" minOccurs="0" name="FillCustomerGridResult" nillable="true" type="q3:ArrayOfCustomerDTO" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -60,7 +45,7 @@
   <xs:element name="FillProjectGridResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/DTO_Licenta" minOccurs="0" name="FillProjectGridResult" nillable="true" type="q5:ArrayOfProjectDTO" />
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/DTO_Licenta" minOccurs="0" name="FillProjectGridResult" nillable="true" type="q4:ArrayOfProjectDTO" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -72,7 +57,7 @@
   <xs:element name="FillInternGridResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/DTO_Licenta" minOccurs="0" name="FillInternGridResult" nillable="true" type="q6:ArrayOfInternDTO" />
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/DTO_Licenta" minOccurs="0" name="FillInternGridResult" nillable="true" type="q5:ArrayOfInternDTO" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -86,7 +71,7 @@
   <xs:element name="FillTaskGridResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/DTO_Licenta" minOccurs="0" name="FillTaskGridResult" nillable="true" type="q7:ArrayOfTaskDTO" />
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/DTO_Licenta" minOccurs="0" name="FillTaskGridResult" nillable="true" type="q6:ArrayOfTaskDTO" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -98,7 +83,7 @@
   <xs:element name="FillHolidaysGridResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/DTO_Licenta" minOccurs="0" name="FillHolidaysGridResult" nillable="true" type="q8:ArrayOfHolidayDTO" />
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/DTO_Licenta" minOccurs="0" name="FillHolidaysGridResult" nillable="true" type="q7:ArrayOfHolidayDTO" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -112,7 +97,7 @@
   <xs:element name="FillProjectEmployeesGridResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/DTO_Licenta" minOccurs="0" name="FillProjectEmployeesGridResult" nillable="true" type="q9:ArrayOfEmployeeDTO" />
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/DTO_Licenta" minOccurs="0" name="FillProjectEmployeesGridResult" nillable="true" type="q8:ArrayOfEmployeeDTO" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -126,7 +111,7 @@
   <xs:element name="FillNoteListBoxResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/DTO_Licenta" minOccurs="0" name="FillNoteListBoxResult" nillable="true" type="q10:ArrayOfNoteDTO" />
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/DTO_Licenta" minOccurs="0" name="FillNoteListBoxResult" nillable="true" type="q9:ArrayOfNoteDTO" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -138,7 +123,7 @@
   <xs:element name="FillNewsBoxResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/DTO_Licenta" minOccurs="0" name="FillNewsBoxResult" nillable="true" type="q11:ArrayOfNewsDTO" />
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/DTO_Licenta" minOccurs="0" name="FillNewsBoxResult" nillable="true" type="q10:ArrayOfNewsDTO" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -152,7 +137,7 @@
   <xs:element name="FillProjectComboBoxResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/DTO_Licenta" minOccurs="0" name="FillProjectComboBoxResult" nillable="true" type="q12:ArrayOfProjectDTO" />
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/DTO_Licenta" minOccurs="0" name="FillProjectComboBoxResult" nillable="true" type="q11:ArrayOfProjectDTO" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -164,7 +149,7 @@
   <xs:element name="FillComboBoxDepartmentResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/DTO_Licenta" minOccurs="0" name="FillComboBoxDepartmentResult" nillable="true" type="q13:ArrayOfDepartmentDTO" />
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/DTO_Licenta" minOccurs="0" name="FillComboBoxDepartmentResult" nillable="true" type="q12:ArrayOfDepartmentDTO" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -176,7 +161,7 @@
   <xs:element name="FillComboBoxJobResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/DTO_Licenta" minOccurs="0" name="FillComboBoxJobResult" nillable="true" type="q14:ArrayOfJobDTO" />
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/DTO_Licenta" minOccurs="0" name="FillComboBoxJobResult" nillable="true" type="q13:ArrayOfJobDTO" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -188,7 +173,7 @@
   <xs:element name="FillComboBoxApplicantResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/DTO_Licenta" minOccurs="0" name="FillComboBoxApplicantResult" nillable="true" type="q15:ArrayOfApplicantDTO" />
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/DTO_Licenta" minOccurs="0" name="FillComboBoxApplicantResult" nillable="true" type="q14:ArrayOfApplicantDTO" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -200,7 +185,7 @@
   <xs:element name="FillComboBoxEmployeeResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/DTO_Licenta" minOccurs="0" name="FillComboBoxEmployeeResult" nillable="true" type="q16:ArrayOfEmployeeDTO" />
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/DTO_Licenta" minOccurs="0" name="FillComboBoxEmployeeResult" nillable="true" type="q15:ArrayOfEmployeeDTO" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -212,7 +197,7 @@
   <xs:element name="FillComboBoxCustomerResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/DTO_Licenta" minOccurs="0" name="FillComboBoxCustomerResult" nillable="true" type="q17:ArrayOfCustomerDTO" />
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/DTO_Licenta" minOccurs="0" name="FillComboBoxCustomerResult" nillable="true" type="q16:ArrayOfCustomerDTO" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -226,7 +211,22 @@
   <xs:element name="FillComboBoxProjectManagerResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/DTO_Licenta" minOccurs="0" name="FillComboBoxProjectManagerResult" nillable="true" type="q18:ArrayOfEmployeeDTO" />
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/DTO_Licenta" minOccurs="0" name="FillComboBoxProjectManagerResult" nillable="true" type="q17:ArrayOfEmployeeDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Authenticate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AuthenticateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/DTO_Licenta" minOccurs="0" name="AuthenticateResult" nillable="true" type="q18:LoginDTO" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

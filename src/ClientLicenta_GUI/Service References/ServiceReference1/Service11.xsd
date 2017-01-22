@@ -1,18 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/DTO_Licenta" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/DTO_Licenta" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:import schemaLocation="http://localhost:37164/Service1.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/DB_Licenta.Models" />
-  <xs:complexType name="LoginDTO">
+  <xs:complexType name="ArrayOfApplicantDTO">
     <xs:sequence>
-      <xs:element minOccurs="0" name="Employee" nillable="true" type="tns:EmployeeDTO" />
-      <xs:element minOccurs="0" name="EmployeeID" type="xs:int" />
-      <xs:element minOccurs="0" name="LoginID" type="xs:int" />
-      <xs:element minOccurs="0" name="Note" nillable="true" type="tns:NoteDTO" />
-      <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
-      <xs:element minOccurs="0" name="SecurityLevel" type="xs:int" />
-      <xs:element minOccurs="0" name="Username" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ApplicantDTO" nillable="true" type="tns:ApplicantDTO" />
     </xs:sequence>
   </xs:complexType>
-  <xs:element name="LoginDTO" nillable="true" type="tns:LoginDTO" />
+  <xs:element name="ArrayOfApplicantDTO" nillable="true" type="tns:ArrayOfApplicantDTO" />
+  <xs:complexType name="ApplicantDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ApplicantID" type="xs:int" />
+      <xs:element minOccurs="0" name="BirthDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Interns" nillable="true" type="tns:ArrayOfInternDTO" />
+      <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Mail" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Nationality" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PhoneNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Registrations" nillable="true" type="tns:ArrayOfRegistrationDTO" />
+      <xs:element minOccurs="0" name="Studies" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ApplicantDTO" nillable="true" type="tns:ApplicantDTO" />
+  <xs:complexType name="ArrayOfInternDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="InternDTO" nillable="true" type="tns:InternDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfInternDTO" nillable="true" type="tns:ArrayOfInternDTO" />
+  <xs:complexType name="InternDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Applicant" nillable="true" type="tns:ApplicantDTO" />
+      <xs:element minOccurs="0" name="ApplicantID" type="xs:int" />
+      <xs:element minOccurs="0" name="Employee" nillable="true" type="tns:EmployeeDTO" />
+      <xs:element minOccurs="0" name="EmployeeID" type="xs:int" />
+      <xs:element minOccurs="0" name="EndDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="InternID" type="xs:int" />
+      <xs:element minOccurs="0" name="Observation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StartDate" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="InternDTO" nillable="true" type="tns:InternDTO" />
   <xs:complexType name="EmployeeDTO">
     <xs:sequence>
       <xs:element minOccurs="0" name="Address" nillable="true" type="xs:string" />
@@ -77,40 +105,6 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="RegistrationDTO" nillable="true" type="tns:RegistrationDTO" />
-  <xs:complexType name="ApplicantDTO">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="ApplicantID" type="xs:int" />
-      <xs:element minOccurs="0" name="BirthDate" type="xs:dateTime" />
-      <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
-      <xs:element minOccurs="0" name="Interns" nillable="true" type="tns:ArrayOfInternDTO" />
-      <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
-      <xs:element minOccurs="0" name="Mail" nillable="true" type="xs:string" />
-      <xs:element minOccurs="0" name="Nationality" nillable="true" type="xs:string" />
-      <xs:element minOccurs="0" name="PhoneNumber" nillable="true" type="xs:string" />
-      <xs:element minOccurs="0" name="Registrations" nillable="true" type="tns:ArrayOfRegistrationDTO" />
-      <xs:element minOccurs="0" name="Studies" nillable="true" type="xs:string" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:element name="ApplicantDTO" nillable="true" type="tns:ApplicantDTO" />
-  <xs:complexType name="ArrayOfInternDTO">
-    <xs:sequence>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="InternDTO" nillable="true" type="tns:InternDTO" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:element name="ArrayOfInternDTO" nillable="true" type="tns:ArrayOfInternDTO" />
-  <xs:complexType name="InternDTO">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="Applicant" nillable="true" type="tns:ApplicantDTO" />
-      <xs:element minOccurs="0" name="ApplicantID" type="xs:int" />
-      <xs:element minOccurs="0" name="Employee" nillable="true" type="tns:EmployeeDTO" />
-      <xs:element minOccurs="0" name="EmployeeID" type="xs:int" />
-      <xs:element minOccurs="0" name="EndDate" type="xs:dateTime" />
-      <xs:element minOccurs="0" name="InternID" type="xs:int" />
-      <xs:element minOccurs="0" name="Observation" nillable="true" type="xs:string" />
-      <xs:element minOccurs="0" name="StartDate" type="xs:dateTime" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:element name="InternDTO" nillable="true" type="tns:InternDTO" />
   <xs:complexType name="JobDTO">
     <xs:sequence>
       <xs:element minOccurs="0" name="Employees" nillable="true" type="tns:ArrayOfEmployeeDTO" />
@@ -143,6 +137,28 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="ArrayOfLoginDTO" nillable="true" type="tns:ArrayOfLoginDTO" />
+  <xs:complexType name="LoginDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Employee" nillable="true" type="tns:EmployeeDTO" />
+      <xs:element minOccurs="0" name="EmployeeID" type="xs:int" />
+      <xs:element minOccurs="0" name="LoginID" type="xs:int" />
+      <xs:element minOccurs="0" name="Note" nillable="true" type="tns:NoteDTO" />
+      <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SecurityLevel" type="xs:int" />
+      <xs:element minOccurs="0" name="Username" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LoginDTO" nillable="true" type="tns:LoginDTO" />
+  <xs:complexType name="NoteDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Date" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Login" nillable="true" type="tns:LoginDTO" />
+      <xs:element minOccurs="0" name="NoteID" type="xs:int" />
+      <xs:element minOccurs="0" name="UserID" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="NoteDTO" nillable="true" type="tns:NoteDTO" />
   <xs:complexType name="ArrayOfProjectDTO">
     <xs:sequence>
       <xs:element minOccurs="0" maxOccurs="unbounded" name="ProjectDTO" nillable="true" type="tns:ProjectDTO" />
@@ -200,22 +216,6 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="TaskDTO" nillable="true" type="tns:TaskDTO" />
-  <xs:complexType name="NoteDTO">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="Date" type="xs:dateTime" />
-      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
-      <xs:element minOccurs="0" name="Login" nillable="true" type="tns:LoginDTO" />
-      <xs:element minOccurs="0" name="NoteID" type="xs:int" />
-      <xs:element minOccurs="0" name="UserID" type="xs:int" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:element name="NoteDTO" nillable="true" type="tns:NoteDTO" />
-  <xs:complexType name="ArrayOfApplicantDTO">
-    <xs:sequence>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="ApplicantDTO" nillable="true" type="tns:ApplicantDTO" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:element name="ArrayOfApplicantDTO" nillable="true" type="tns:ArrayOfApplicantDTO" />
   <xs:complexType name="ArrayOfCustomerDTO">
     <xs:sequence>
       <xs:element minOccurs="0" maxOccurs="unbounded" name="CustomerDTO" nillable="true" type="tns:CustomerDTO" />

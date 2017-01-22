@@ -15,6 +15,7 @@ namespace ClientLicenta_GUI
     {
         #region VARIABLES
         private Service1Client _service = new Service1Client();
+        private ReadServiceClient _serviceRead = new ReadServiceClient();
         private List<ProjectDTO> _projectList = new List<ProjectDTO>();
         private int _projectID;
         #endregion
@@ -87,7 +88,7 @@ namespace ClientLicenta_GUI
         #region FillProjectComboBox
         private void FillProjectComboBox()
         {
-            foreach (var project in _service.FillProjectComboBox(GlobalVariables.CurrentUser.EmployeeID))
+            foreach (var project in _serviceRead.FillProjectComboBox(GlobalVariables.CurrentUser.EmployeeID))
             {
                 ProjectDTO projectDTO = new ProjectDTO();
 
@@ -102,7 +103,7 @@ namespace ClientLicenta_GUI
             }
 
 
-            foreach (var item in _service.FillProjectComboBox(GlobalVariables.CurrentUser.EmployeeID))
+            foreach (var item in _serviceRead.FillProjectComboBox(GlobalVariables.CurrentUser.EmployeeID))
             {
                 ProjectComboBox.Items.Add(item);
             }

@@ -16,6 +16,7 @@ namespace ClientLicenta_GUI
     {
         #region VARIABLES
         private Service1Client _service = new Service1Client();
+        private ReadServiceClient _serviceRead = new ReadServiceClient();
         #endregion
 
         #region CONTRUCTORS
@@ -55,7 +56,7 @@ namespace ClientLicenta_GUI
         #region NotesForm_Load
         private void NotesForm_Load(object sender, EventArgs e)
         {
-            DateListBox.DataSource = _service.FillNoteListBox(GlobalVariables.CurrentUser.LoginID);
+            DateListBox.DataSource = _serviceRead.FillNoteListBox(GlobalVariables.CurrentUser.LoginID);
             DateListBox.DisplayMember = "Date";
         }
         #endregion

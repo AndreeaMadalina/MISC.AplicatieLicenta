@@ -27,3 +27,15 @@ C:\Users\User\Desktop\CodeMetricsMSIC\DTO_Licenta\bin\Debug\EntityFramework.SqlS
 C:\Users\User\Desktop\CodeMetricsMSIC\DTO_Licenta\obj\Debug\DTO_Licenta.csprojResolveAssemblyReference.cache
 C:\Users\User\Desktop\CodeMetricsMSIC\DTO_Licenta\obj\Debug\DTO_Licenta.dll
 C:\Users\User\Desktop\CodeMetricsMSIC\DTO_Licenta\obj\Debug\DTO_Licenta.pdb
+D:\Documents\Master\Semestrul I\MSIC\MISC.AplicatieLicenta\src\DTO_Licenta\bin\Debug\DTO_Licenta.dll.config
+D:\Documents\Master\Semestrul I\MSIC\MISC.AplicatieLicenta\src\DTO_Licenta\bin\Debug\DTO_Licenta.dll
+D:\Documents\Master\Semestrul I\MSIC\MISC.AplicatieLicenta\src\DTO_Licenta\bin\Debug\DTO_Licenta.pdb
+D:\Documents\Master\Semestrul I\MSIC\MISC.AplicatieLicenta\src\DTO_Licenta\bin\Debug\AutoMapper.dll
+D:\Documents\Master\Semestrul I\MSIC\MISC.AplicatieLicenta\src\DTO_Licenta\bin\Debug\EntityFramework.dll
+D:\Documents\Master\Semestrul I\MSIC\MISC.AplicatieLicenta\src\DTO_Licenta\bin\Debug\EntityFramework.SqlServer.dll
+D:\Documents\Master\Semestrul I\MSIC\MISC.AplicatieLicenta\src\DTO_Licenta\bin\Debug\AutoMapper.xml
+D:\Documents\Master\Semestrul I\MSIC\MISC.AplicatieLicenta\src\DTO_Licenta\bin\Debug\EntityFramework.xml
+D:\Documents\Master\Semestrul I\MSIC\MISC.AplicatieLicenta\src\DTO_Licenta\bin\Debug\EntityFramework.SqlServer.xml
+D:\Documents\Master\Semestrul I\MSIC\MISC.AplicatieLicenta\src\DTO_Licenta\obj\Debug\DTO_Licenta.csprojResolveAssemblyReference.cache
+D:\Documents\Master\Semestrul I\MSIC\MISC.AplicatieLicenta\src\DTO_Licenta\obj\Debug\DTO_Licenta.dll
+D:\Documents\Master\Semestrul I\MSIC\MISC.AplicatieLicenta\src\DTO_Licenta\obj\Debug\DTO_Licenta.pdb

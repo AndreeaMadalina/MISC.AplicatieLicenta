@@ -15,6 +15,7 @@ namespace ClientLicenta_GUI
     {
         #region VARIABLES
         private Service1Client _service = new Service1Client();
+        private ReadServiceClient _serviceRead = new ReadServiceClient();
         Color _myColor;
         Font _myFont;
         #endregion
@@ -42,7 +43,7 @@ namespace ClientLicenta_GUI
         private void NewsFeedForm_Load(object sender, EventArgs e)
         {
             
-            foreach (var item in _service.FillNewsBox())
+            foreach (var item in _serviceRead.FillNewsBox())
             {
                 NewsListBox.Items.Add(item.Title);
                 NewsListBox.Items.Add(item.Date.ToString("MM/dd/yyyy"));

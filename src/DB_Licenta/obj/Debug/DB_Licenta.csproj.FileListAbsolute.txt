@@ -27,3 +27,15 @@ C:\Users\User\Desktop\CodeMetricsMSIC\DB_Licenta\bin\Debug\EntityFramework.SqlSe
 C:\Users\User\Desktop\CodeMetricsMSIC\DB_Licenta\obj\Debug\DB_Licenta.csprojResolveAssemblyReference.cache
 C:\Users\User\Desktop\CodeMetricsMSIC\DB_Licenta\obj\Debug\DB_Licenta.dll
 C:\Users\User\Desktop\CodeMetricsMSIC\DB_Licenta\obj\Debug\DB_Licenta.pdb
+D:\Documents\Master\Semestrul I\MSIC\MISC.AplicatieLicenta\src\DB_Licenta\bin\Debug\DB_Licenta.dll.config
+D:\Documents\Master\Semestrul I\MSIC\MISC.AplicatieLicenta\src\DB_Licenta\bin\Debug\DB_Licenta.dll
+D:\Documents\Master\Semestrul I\MSIC\MISC.AplicatieLicenta\src\DB_Licenta\bin\Debug\DB_Licenta.pdb
+D:\Documents\Master\Semestrul I\MSIC\MISC.AplicatieLicenta\src\DB_Licenta\bin\Debug\AutoMapper.dll
+D:\Documents\Master\Semestrul I\MSIC\MISC.AplicatieLicenta\src\DB_Licenta\bin\Debug\EntityFramework.dll
+D:\Documents\Master\Semestrul I\MSIC\MISC.AplicatieLicenta\src\DB_Licenta\bin\Debug\EntityFramework.SqlServer.dll
+D:\Documents\Master\Semestrul I\MSIC\MISC.AplicatieLicenta\src\DB_Licenta\bin\Debug\AutoMapper.xml
+D:\Documents\Master\Semestrul I\MSIC\MISC.AplicatieLicenta\src\DB_Licenta\bin\Debug\EntityFramework.xml
+D:\Documents\Master\Semestrul I\MSIC\MISC.AplicatieLicenta\src\DB_Licenta\bin\Debug\EntityFramework.SqlServer.xml
+D:\Documents\Master\Semestrul I\MSIC\MISC.AplicatieLicenta\src\DB_Licenta\obj\Debug\DB_Licenta.dll
+D:\Documents\Master\Semestrul I\MSIC\MISC.AplicatieLicenta\src\DB_Licenta\obj\Debug\DB_Licenta.pdb
+D:\Documents\Master\Semestrul I\MSIC\MISC.AplicatieLicenta\src\DB_Licenta\obj\Debug\DB_Licenta.csprojResolveAssemblyReference.cache

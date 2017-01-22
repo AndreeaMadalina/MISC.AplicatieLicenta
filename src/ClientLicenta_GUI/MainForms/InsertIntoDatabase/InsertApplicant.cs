@@ -14,6 +14,8 @@ namespace ClientLicenta_GUI.MainForms
     public partial class InsertApplicant : Form
     {
         private Service1Client _service = new Service1Client();
+        private ReadServiceClient _serviceRead = new ReadServiceClient();
+
         public InsertApplicant()
         {
             InitializeComponent();
@@ -39,12 +41,12 @@ namespace ClientLicenta_GUI.MainForms
         #region ComboBox
         private void FillComboBoxDepartment()
         {
-            DepartmentComboBox.DataSource = _service.FillComboBoxDepartment();
+            DepartmentComboBox.DataSource = _serviceRead.FillComboBoxDepartment();
             DepartmentComboBox.DisplayMember = "DepartmentName";
         }
         private void FillComboBoxJob()
         {
-            JobComboBox.DataSource = _service.FillComboBoxJob();
+            JobComboBox.DataSource = _serviceRead.FillComboBoxJob();
             JobComboBox.DisplayMember = "JobTitle";
         }
         #endregion

@@ -16,6 +16,7 @@ namespace ClientLicenta_GUI.MainForms.InsertIntoDatabase
     {
         #region Variables
         private Service1Client _service = new Service1Client();
+        private ReadServiceClient _serviceRead = new ReadServiceClient();
         Employee _employee;
         private int _customerID;
         private int _employeeID;
@@ -130,7 +131,7 @@ namespace ClientLicenta_GUI.MainForms.InsertIntoDatabase
         #region FillComboBoxCustomer
         private void FillComboBoxCustomer()
         {
-            CustomerComboBox.DataSource = _service.FillComboBoxCustomer();
+            CustomerComboBox.DataSource = _serviceRead.FillComboBoxCustomer();
             CustomerComboBox.DisplayMember = "Name";
             //List<CustomerDTO> customerList = new List<CustomerDTO>();
             //foreach (var item in collection)
@@ -143,7 +144,7 @@ namespace ClientLicenta_GUI.MainForms.InsertIntoDatabase
         #region FillComboBoxTechnology
         private void FillComboBoxTechnology()
         {
-            TechnologyComboBox.DataSource = _service.FillComboBoxDepartment();
+            TechnologyComboBox.DataSource = _serviceRead.FillComboBoxDepartment();
             TechnologyComboBox.DisplayMember = "DepartmentName";
         }
         #endregion
@@ -153,7 +154,7 @@ namespace ClientLicenta_GUI.MainForms.InsertIntoDatabase
         {
             List<Employee> employeeList = new List<Employee>();
             
-            foreach (EmployeeDTO item in _service.FillComboBoxProjectManager(departmentID))
+            foreach (EmployeeDTO item in _serviceRead.FillComboBoxProjectManager(departmentID))
             {
                 EmployeeDTO employeeDTO = new EmployeeDTO();
                 employeeDTO = item;

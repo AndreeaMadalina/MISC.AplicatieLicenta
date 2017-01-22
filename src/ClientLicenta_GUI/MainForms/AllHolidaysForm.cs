@@ -14,7 +14,7 @@ namespace ClientLicenta_GUI
     public partial class AllHolidaysForm : Form
     {
         #region VARIABLES
-        private Service1Client _service = new Service1Client();
+        private ReadServiceClient _service = new ReadServiceClient();
         #endregion
         public AllHolidaysForm()
         {

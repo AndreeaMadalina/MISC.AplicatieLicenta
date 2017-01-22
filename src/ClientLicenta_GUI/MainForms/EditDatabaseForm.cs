@@ -15,7 +15,7 @@ namespace ClientLicenta_GUI
 {
     public partial class EditDatabaseForm : Form
     {
-        private Service1Client _service = new Service1Client();
+        private ReadServiceClient _service = new ReadServiceClient();
         public EditDatabaseForm()
         {
             InitializeComponent();

@@ -16,6 +16,8 @@ namespace ClientLicenta_GUI
     public partial class TasksForm : Form
     {
         private Service1Client _service = new Service1Client();
+        private ReadServiceClient _serviceRead = new ReadServiceClient();
+
         public TasksForm()
         {
             InitializeComponent();
@@ -70,7 +72,7 @@ namespace ClientLicenta_GUI
             // Se creaza o lista de task-uri de tipul DTO
             List<TaskDTO> taskList = new List<TaskDTO>();
             // Pentru fiecare task al user-ului curent, returnat de catre serviciu, se copiaza detaliile acestuia
-            foreach (var item in _service.FillTaskGrid(GlobalVariables.CurrentUser.EmployeeID))
+            foreach (var item in _serviceRead.FillTaskGrid(GlobalVariables.CurrentUser.EmployeeID))
             {
                 TaskDTO task = new TaskDTO();
                 ProjectDTO projetc = new ProjectDTO();

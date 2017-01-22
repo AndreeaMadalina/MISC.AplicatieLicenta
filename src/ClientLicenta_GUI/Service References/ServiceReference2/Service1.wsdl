@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:10925/ServiceRead.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:10925/ServiceRead.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:10925/ServiceRead.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/DTO_Licenta" />
+      <xsd:import schemaLocation="http://localhost:10925/ServiceRead.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/DB_Licenta.Models" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IServiceRead_FillApplicantGrid_InputMessage">
+    <wsdl:part name="parameters" element="tns:FillApplicantGrid" />
+  </wsdl:message>
+  <wsdl:message name="IServiceRead_FillApplicantGrid_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FillApplicantGridResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceRead_FillEmployeeGrid_InputMessage">
+    <wsdl:part name="parameters" element="tns:FillEmployeeGrid" />
+  </wsdl:message>
+  <wsdl:message name="IServiceRead_FillEmployeeGrid_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FillEmployeeGridResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceRead_FillCustomerGrid_InputMessage">
+    <wsdl:part name="parameters" element="tns:FillCustomerGrid" />
+  </wsdl:message>
+  <wsdl:message name="IServiceRead_FillCustomerGrid_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FillCustomerGridResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceRead_FillProjectGrid_InputMessage">
+    <wsdl:part name="parameters" element="tns:FillProjectGrid" />
+  </wsdl:message>
+  <wsdl:message name="IServiceRead_FillProjectGrid_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FillProjectGridResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceRead_FillInternGrid_InputMessage">
+    <wsdl:part name="parameters" element="tns:FillInternGrid" />
+  </wsdl:message>
+  <wsdl:message name="IServiceRead_FillInternGrid_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FillInternGridResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceRead_FillTaskGrid_InputMessage">
+    <wsdl:part name="parameters" element="tns:FillTaskGrid" />
+  </wsdl:message>
+  <wsdl:message name="IServiceRead_FillTaskGrid_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FillTaskGridResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceRead_FillHolidaysGrid_InputMessage">
+    <wsdl:part name="parameters" element="tns:FillHolidaysGrid" />
+  </wsdl:message>
+  <wsdl:message name="IServiceRead_FillHolidaysGrid_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FillHolidaysGridResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceRead_FillProjectEmployeesGrid_InputMessage">
+    <wsdl:part name="parameters" element="tns:FillProjectEmployeesGrid" />
+  </wsdl:message>
+  <wsdl:message name="IServiceRead_FillProjectEmployeesGrid_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FillProjectEmployeesGridResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceRead_FillNoteListBox_InputMessage">
+    <wsdl:part name="parameters" element="tns:FillNoteListBox" />
+  </wsdl:message>
+  <wsdl:message name="IServiceRead_FillNoteListBox_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FillNoteListBoxResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceRead_FillNewsBox_InputMessage">
+    <wsdl:part name="parameters" element="tns:FillNewsBox" />
+  </wsdl:message>
+  <wsdl:message name="IServiceRead_FillNewsBox_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FillNewsBoxResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceRead_FillProjectComboBox_InputMessage">
+    <wsdl:part name="parameters" element="tns:FillProjectComboBox" />
+  </wsdl:message>
+  <wsdl:message name="IServiceRead_FillProjectComboBox_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FillProjectComboBoxResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceRead_FillComboBoxDepartment_InputMessage">
+    <wsdl:part name="parameters" element="tns:FillComboBoxDepartment" />
+  </wsdl:message>
+  <wsdl:message name="IServiceRead_FillComboBoxDepartment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FillComboBoxDepartmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceRead_FillComboBoxJob_InputMessage">
+    <wsdl:part name="parameters" element="tns:FillComboBoxJob" />
+  </wsdl:message>
+  <wsdl:message name="IServiceRead_FillComboBoxJob_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FillComboBoxJobResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceRead_FillComboBoxApplicant_InputMessage">
+    <wsdl:part name="parameters" element="tns:FillComboBoxApplicant" />
+  </wsdl:message>
+  <wsdl:message name="IServiceRead_FillComboBoxApplicant_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FillComboBoxApplicantResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceRead_FillComboBoxEmployee_InputMessage">
+    <wsdl:part name="parameters" element="tns:FillComboBoxEmployee" />
+  </wsdl:message>
+  <wsdl:message name="IServiceRead_FillComboBoxEmployee_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FillComboBoxEmployeeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceRead_FillComboBoxCustomer_InputMessage">
+    <wsdl:part name="parameters" element="tns:FillComboBoxCustomer" />
+  </wsdl:message>
+  <wsdl:message name="IServiceRead_FillComboBoxCustomer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FillComboBoxCustomerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceRead_FillComboBoxProjectManager_InputMessage">
+    <wsdl:part name="parameters" element="tns:FillComboBoxProjectManager" />
+  </wsdl:message>
+  <wsdl:message name="IServiceRead_FillComboBoxProjectManager_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FillComboBoxProjectManagerResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IServiceRead">
+    <wsdl:operation name="FillApplicantGrid">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceRead/FillApplicantGrid" message="tns:IServiceRead_FillApplicantGrid_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceRead/FillApplicantGridResponse" message="tns:IServiceRead_FillApplicantGrid_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FillEmployeeGrid">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceRead/FillEmployeeGrid" message="tns:IServiceRead_FillEmployeeGrid_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceRead/FillEmployeeGridResponse" message="tns:IServiceRead_FillEmployeeGrid_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FillCustomerGrid">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceRead/FillCustomerGrid" message="tns:IServiceRead_FillCustomerGrid_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceRead/FillCustomerGridResponse" message="tns:IServiceRead_FillCustomerGrid_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FillProjectGrid">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceRead/FillProjectGrid" message="tns:IServiceRead_FillProjectGrid_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceRead/FillProjectGridResponse" message="tns:IServiceRead_FillProjectGrid_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FillInternGrid">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceRead/FillInternGrid" message="tns:IServiceRead_FillInternGrid_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceRead/FillInternGridResponse" message="tns:IServiceRead_FillInternGrid_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FillTaskGrid">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceRead/FillTaskGrid" message="tns:IServiceRead_FillTaskGrid_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceRead/FillTaskGridResponse" message="tns:IServiceRead_FillTaskGrid_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FillHolidaysGrid">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceRead/FillHolidaysGrid" message="tns:IServiceRead_FillHolidaysGrid_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceRead/FillHolidaysGridResponse" message="tns:IServiceRead_FillHolidaysGrid_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FillProjectEmployeesGrid">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceRead/FillProjectEmployeesGrid" message="tns:IServiceRead_FillProjectEmployeesGrid_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceRead/FillProjectEmployeesGridResponse" message="tns:IServiceRead_FillProjectEmployeesGrid_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FillNoteListBox">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceRead/FillNoteListBox" message="tns:IServiceRead_FillNoteListBox_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceRead/FillNoteListBoxResponse" message="tns:IServiceRead_FillNoteListBox_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FillNewsBox">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceRead/FillNewsBox" message="tns:IServiceRead_FillNewsBox_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceRead/FillNewsBoxResponse" message="tns:IServiceRead_FillNewsBox_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FillProjectComboBox">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceRead/FillProjectComboBox" message="tns:IServiceRead_FillProjectComboBox_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceRead/FillProjectComboBoxResponse" message="tns:IServiceRead_FillProjectComboBox_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FillComboBoxDepartment">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceRead/FillComboBoxDepartment" message="tns:IServiceRead_FillComboBoxDepartment_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceRead/FillComboBoxDepartmentResponse" message="tns:IServiceRead_FillComboBoxDepartment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FillComboBoxJob">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceRead/FillComboBoxJob" message="tns:IServiceRead_FillComboBoxJob_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceRead/FillComboBoxJobResponse" message="tns:IServiceRead_FillComboBoxJob_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FillComboBoxApplicant">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceRead/FillComboBoxApplicant" message="tns:IServiceRead_FillComboBoxApplicant_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceRead/FillComboBoxApplicantResponse" message="tns:IServiceRead_FillComboBoxApplicant_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FillComboBoxEmployee">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceRead/FillComboBoxEmployee" message="tns:IServiceRead_FillComboBoxEmployee_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceRead/FillComboBoxEmployeeResponse" message="tns:IServiceRead_FillComboBoxEmployee_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FillComboBoxCustomer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceRead/FillComboBoxCustomer" message="tns:IServiceRead_FillComboBoxCustomer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceRead/FillComboBoxCustomerResponse" message="tns:IServiceRead_FillComboBoxCustomer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FillComboBoxProjectManager">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceRead/FillComboBoxProjectManager" message="tns:IServiceRead_FillComboBoxProjectManager_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceRead/FillComboBoxProjectManagerResponse" message="tns:IServiceRead_FillComboBoxProjectManager_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IServiceRead" type="tns:IServiceRead">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="FillApplicantGrid">
+      <soap:operation soapAction="http://tempuri.org/IServiceRead/FillApplicantGrid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FillEmployeeGrid">
+      <soap:operation soapAction="http://tempuri.org/IServiceRead/FillEmployeeGrid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FillCustomerGrid">
+      <soap:operation soapAction="http://tempuri.org/IServiceRead/FillCustomerGrid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FillProjectGrid">
+      <soap:operation soapAction="http://tempuri.org/IServiceRead/FillProjectGrid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FillInternGrid">
+      <soap:operation soapAction="http://tempuri.org/IServiceRead/FillInternGrid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FillTaskGrid">
+      <soap:operation soapAction="http://tempuri.org/IServiceRead/FillTaskGrid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FillHolidaysGrid">
+      <soap:operation soapAction="http://tempuri.org/IServiceRead/FillHolidaysGrid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FillProjectEmployeesGrid">
+      <soap:operation soapAction="http://tempuri.org/IServiceRead/FillProjectEmployeesGrid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FillNoteListBox">
+      <soap:operation soapAction="http://tempuri.org/IServiceRead/FillNoteListBox" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FillNewsBox">
+      <soap:operation soapAction="http://tempuri.org/IServiceRead/FillNewsBox" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FillProjectComboBox">
+      <soap:operation soapAction="http://tempuri.org/IServiceRead/FillProjectComboBox" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FillComboBoxDepartment">
+      <soap:operation soapAction="http://tempuri.org/IServiceRead/FillComboBoxDepartment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FillComboBoxJob">
+      <soap:operation soapAction="http://tempuri.org/IServiceRead/FillComboBoxJob" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FillComboBoxApplicant">
+      <soap:operation soapAction="http://tempuri.org/IServiceRead/FillComboBoxApplicant" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FillComboBoxEmployee">
+      <soap:operation soapAction="http://tempuri.org/IServiceRead/FillComboBoxEmployee" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FillComboBoxCustomer">
+      <soap:operation soapAction="http://tempuri.org/IServiceRead/FillComboBoxCustomer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FillComboBoxProjectManager">
+      <soap:operation soapAction="http://tempuri.org/IServiceRead/FillComboBoxProjectManager" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IServiceRead" binding="tns:BasicHttpBinding_IServiceRead">
+      <soap:address location="http://localhost:10925/ServiceRead.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

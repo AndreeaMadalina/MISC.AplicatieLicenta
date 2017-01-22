@@ -26,3 +26,4 @@ C:\Users\User\Desktop\CodeMetricsMSIC\ServerLicenta\bin\EntityFramework.SqlServe
 C:\Users\User\Desktop\CodeMetricsMSIC\ServerLicenta\obj\Debug\ServiceLicenta.csprojResolveAssemblyReference.cache
 C:\Users\User\Desktop\CodeMetricsMSIC\ServerLicenta\obj\Debug\ServerLicenta.dll
 C:\Users\User\Desktop\CodeMetricsMSIC\ServerLicenta\obj\Debug\ServerLicenta.pdb
+D:\Documents\Master\Semestrul I\MSIC\MISC.AplicatieLicenta\src\ServerLicenta\obj\Debug\ServiceLicenta.csprojResolveAssemblyReference.cache

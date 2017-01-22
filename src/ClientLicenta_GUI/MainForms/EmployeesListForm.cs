@@ -15,6 +15,7 @@ namespace ClientLicenta_GUI
     public partial class EmployeesListForm : Form
     {
         private Service1Client _service = new Service1Client();
+        private ReadServiceClient _serviceRead = new ReadServiceClient();
         public EmployeesListForm()
         {
             InitializeComponent();
@@ -27,7 +28,7 @@ namespace ClientLicenta_GUI
         {
             gridViewEmployees.Columns.Clear();
             gridControlEmployees.DataSource = null;
-            gridControlEmployees.DataSource = _service.FillProjectEmployeesGrid(GlobalVariables.CurrentUser.EmployeeID).Select(x => new
+            gridControlEmployees.DataSource = _serviceRead.FillProjectEmployeesGrid(GlobalVariables.CurrentUser.EmployeeID).Select(x => new
             {
                 Employee = string.Format("{0} {1}", x.FirstName, x.LastName),
                 Mail = x.Mail,

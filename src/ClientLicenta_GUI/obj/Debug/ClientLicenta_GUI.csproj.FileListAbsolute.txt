@@ -174,5 +174,27 @@ C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\obj\Debug\ClientLicenta_
 C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.csproj.GenerateResource.Cache
 C:\Users\User\Desktop\CodeMetricsMSIC\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.exe.licenses
 D:\Documents\Master\Semestrul I\MSIC\MISC.AplicatieLicenta\src\ClientLicenta_GUI\bin\Debug\ClientLicenta_GUI.exe.config
-D:\Documents\Master\Semestrul I\MSIC\MISC.AplicatieLicenta\src\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.exe
-D:\Documents\Master\Semestrul I\MSIC\MISC.AplicatieLicenta\src\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.pdb
+D:\Documents\Master\Semestrul I\MSIC\MISC.AplicatieLicenta\src\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.csprojResolveAssemblyReference.cache
+D:\Documents\Master\Semestrul I\MSIC\MISC.AplicatieLicenta\src\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.EditDatabaseForm.resources
+D:\Documents\Master\Semestrul I\MSIC\MISC.AplicatieLicenta\src\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.EmployeesListForm.resources
+D:\Documents\Master\Semestrul I\MSIC\MISC.AplicatieLicenta\src\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.HolidayForm.resources
+D:\Documents\Master\Semestrul I\MSIC\MISC.AplicatieLicenta\src\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.MainForms.InsertApplicant.resources
+D:\Documents\Master\Semestrul I\MSIC\MISC.AplicatieLicenta\src\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.MainForms.InsertIntoDatabase.InsertCustomer.resources
+D:\Documents\Master\Semestrul I\MSIC\MISC.AplicatieLicenta\src\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.MainForms.InsertIntoDatabase.InsertEmployee.resources
+D:\Documents\Master\Semestrul I\MSIC\MISC.AplicatieLicenta\src\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.MainForms.InsertIntoDatabase.InsertIntern.resources
+D:\Documents\Master\Semestrul I\MSIC\MISC.AplicatieLicenta\src\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.MainForms.InsertIntoDatabase.InsertNotes.resources
+D:\Documents\Master\Semestrul I\MSIC\MISC.AplicatieLicenta\src\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.MainForms.InsertIntoDatabase.InsertProject.resources
+D:\Documents\Master\Semestrul I\MSIC\MISC.AplicatieLicenta\src\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.MainForms.InsertIntoDatabase.NewTaskForm.resources
+D:\Documents\Master\Semestrul I\MSIC\MISC.AplicatieLicenta\src\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.LoginForm.resources
+D:\Documents\Master\Semestrul I\MSIC\MISC.AplicatieLicenta\src\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.MenuForm.resources
+D:\Documents\Master\Semestrul I\MSIC\MISC.AplicatieLicenta\src\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.NewsFeedForm.resources
+D:\Documents\Master\Semestrul I\MSIC\MISC.AplicatieLicenta\src\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.NotesForm.resources
+D:\Documents\Master\Semestrul I\MSIC\MISC.AplicatieLicenta\src\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.AllHolidaysForm.resources
+D:\Documents\Master\Semestrul I\MSIC\MISC.AplicatieLicenta\src\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.ProfileForm.resources
+D:\Documents\Master\Semestrul I\MSIC\MISC.AplicatieLicenta\src\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.ProjectStatusForm.resources
+D:\Documents\Master\Semestrul I\MSIC\MISC.AplicatieLicenta\src\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.Properties.Resources.resources
+D:\Documents\Master\Semestrul I\MSIC\MISC.AplicatieLicenta\src\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.TasksForm.resources
+D:\Documents\Master\Semestrul I\MSIC\MISC.AplicatieLicenta\src\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.UserControls.ucApplicantInsert.resources
+D:\Documents\Master\Semestrul I\MSIC\MISC.AplicatieLicenta\src\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.UserControls.ucTaskUpdate.resources
+D:\Documents\Master\Semestrul I\MSIC\MISC.AplicatieLicenta\src\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.csproj.GenerateResource.Cache
+D:\Documents\Master\Semestrul I\MSIC\MISC.AplicatieLicenta\src\ClientLicenta_GUI\obj\Debug\ClientLicenta_GUI.exe.licenses

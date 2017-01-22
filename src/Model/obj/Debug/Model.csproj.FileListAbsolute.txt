@@ -7,3 +7,8 @@ C:\Users\User\Desktop\CodeMetricsMSIC\Model\bin\Debug\Model.pdb
 C:\Users\User\Desktop\CodeMetricsMSIC\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
 C:\Users\User\Desktop\CodeMetricsMSIC\Model\obj\Debug\Model.dll
 C:\Users\User\Desktop\CodeMetricsMSIC\Model\obj\Debug\Model.pdb
+D:\Documents\Master\Semestrul I\MSIC\MISC.AplicatieLicenta\src\Model\bin\Debug\Model.dll
+D:\Documents\Master\Semestrul I\MSIC\MISC.AplicatieLicenta\src\Model\bin\Debug\Model.pdb
+D:\Documents\Master\Semestrul I\MSIC\MISC.AplicatieLicenta\src\Model\obj\Debug\Model.dll
+D:\Documents\Master\Semestrul I\MSIC\MISC.AplicatieLicenta\src\Model\obj\Debug\Model.pdb
+D:\Documents\Master\Semestrul I\MSIC\MISC.AplicatieLicenta\src\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
