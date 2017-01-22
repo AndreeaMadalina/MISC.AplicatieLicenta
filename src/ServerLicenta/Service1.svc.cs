@@ -115,36 +115,8 @@ namespace ServerLicenta
                     //Fac conversia din Employee in EmployeeDTO pentru a-mi putea popula lista de angajati
                     foreach (var employee in e)
                     {
-                        EmployeeDTO employeeDTO = new EmployeeDTO();
-                        DepartmentDTO departmentDTO = new DepartmentDTO();
-                        JobDTO jobDTO = new JobDTO();
-
-                        employeeDTO.Department = departmentDTO;
-                        employeeDTO.Job = jobDTO;
-
-                        // Se iau detalile selectate din baza de date si se populeaza proprietatile instantei de tipul DTO
-                        employeeDTO.EmployeeID = Convert.ToInt32(employee.EmployeeID);
-                        employeeDTO.FirstName = employee.FirstName;
-                        employeeDTO.LastName = employee.LastName;
-                        employeeDTO.PNC = employee.PNC;
-                        employeeDTO.Address = employee.Address;
-                        employeeDTO.BirthDate = employee.BirthDate;
-                        employeeDTO.Gender = employee.Gender;
-                        employeeDTO.HireDate = employee.HireDate;
-                        employeeDTO.Mail = employee.Mail;
-                        employeeDTO.Nationality = employee.Nationality;
-                        employeeDTO.PhoneNumber = employee.PhoneNumber;
-                        employeeDTO.Studies = employee.Studies;
-                        employeeDTO.Salary = employee.Salary;
-                        employeeDTO.FileNumber = employee.FileNumber;
-                        // Se ia numele si locatia departamentul unde lucreaza angajatul
-                        employeeDTO.Department.DepartmentName = employee.Department.DepartmentName;
-                        employeeDTO.Department.Location = employee.Department.Location;
-                        // Se ia numele job-ului pe care acesta il are
-                        employeeDTO.Job.JobTitle = employee.Job.JobTitle;
-
                         // Se adauga in lista creata mai sus
-                        employeeList.Add(employeeDTO);
+                        employeeList.Add(ConversionForFillEmployeeGrid(employee));
                     }
                     // Se returneaza lista de angajati
                     return employeeList;
@@ -154,6 +126,44 @@ namespace ServerLicenta
             {
                 throw;
             }
+        }
+        #endregion
+
+        #region ConversionForFillEmployeeGrid
+        private EmployeeDTO ConversionForFillEmployeeGrid(Employee employee)
+        {
+            // Se creaza o instanta de tipul EmployeeDTO
+            EmployeeDTO employeeDTO = new EmployeeDTO();
+            // Se creaza o instanta de tipul DepartmentDTO unde se vor pune datele departamentului de care apartine angajatul
+            DepartmentDTO departmentDTO = new DepartmentDTO();
+            // Se creaza o instanta de tipul JobDTO unde se vor pune datele job-ului pe care il are angajatul
+            JobDTO jobDTO = new JobDTO();
+
+            employeeDTO.Department = departmentDTO;
+            employeeDTO.Job = jobDTO;
+            // Se iau detalile selectate din baza de date si se populeaza proprietatile instantei de tipul DTO
+            employeeDTO.EmployeeID = Convert.ToInt32(employee.EmployeeID);
+            employeeDTO.FirstName = employee.FirstName;
+            employeeDTO.LastName = employee.LastName;
+            employeeDTO.PNC = employee.PNC;
+            employeeDTO.Address = employee.Address;
+            employeeDTO.BirthDate = employee.BirthDate;
+            employeeDTO.Gender = employee.Gender;
+            employeeDTO.HireDate = employee.HireDate;
+            employeeDTO.Mail = employee.Mail;
+            employeeDTO.Nationality = employee.Nationality;
+            employeeDTO.PhoneNumber = employee.PhoneNumber;
+            employeeDTO.Studies = employee.Studies;
+            employeeDTO.Salary = employee.Salary;
+            employeeDTO.FileNumber = employee.FileNumber;
+            // Se ia numele si locatia departamentul unde lucreaza angajatul
+            employeeDTO.Department.DepartmentName = employee.Department.DepartmentName;
+            employeeDTO.Department.Location = employee.Department.Location;
+            // Se ia numele job-ului pe care acesta il are
+            employeeDTO.Job.JobTitle = employee.Job.JobTitle;
+
+            // Se returneaza angajatul
+            return employeeDTO;
         }
         #endregion
 
@@ -411,39 +421,8 @@ namespace ServerLicenta
                                 var exists = context.Tasks.FirstOrDefault(x => x.EmployeeID == employee.EmployeeID && x.ProjectID == project.ProjectID);
                                 if(exists != null)
                                 {
-                                    // Se creaza o instanta de tipul EmployeeDTO
-                                    EmployeeDTO employeeDTO = new EmployeeDTO();
-                                    // Se creaza o instanta de tipul DeparmentDTO in care se vor pune datele departamentului unde lucreaza angajatul
-                                    DepartmentDTO departmentDTO = new DepartmentDTO();
-                                    // Se creaza o instanta de tipul JobDTO care va contine date despre job-ul angajatului
-                                    JobDTO jobDTO = new JobDTO();
-
-                                    employeeDTO.Department = departmentDTO;
-                                    employeeDTO.Job = jobDTO;
-
-                                    // Se iau detalile despre angajat
-                                    employeeDTO.EmployeeID = Convert.ToInt32(employee.EmployeeID);
-                                    employeeDTO.FirstName = employee.FirstName;
-                                    employeeDTO.LastName = employee.LastName;
-                                    employeeDTO.PNC = employee.PNC;
-                                    employeeDTO.Address = employee.Address;
-                                    employeeDTO.BirthDate = employee.BirthDate;
-                                    employeeDTO.Gender = employee.Gender;
-                                    employeeDTO.HireDate = employee.HireDate;
-                                    employeeDTO.Mail = employee.Mail;
-                                    employeeDTO.Nationality = employee.Nationality;
-                                    employeeDTO.PhoneNumber = employee.PhoneNumber;
-                                    employeeDTO.Studies = employee.Studies;
-                                    employeeDTO.Salary = employee.Salary;
-                                    employeeDTO.FileNumber = employee.FileNumber;
-                                    // Se ia departamentul si locatia departamentului unde lucreaza angajatul
-                                    employeeDTO.Department.DepartmentName = employee.Department.DepartmentName;
-                                    employeeDTO.Department.Location = employee.Department.Location;
-                                    // Se ia job-ul pe care acesta il are
-                                    employeeDTO.Job.JobTitle = employee.Job.JobTitle;
-
                                     // Se adauga in lista de angajati creata mai sus
-                                    employeesList.Add(employeeDTO);
+                                    employeesList.Add(ConvertEmployeeToDTO(employee));
                                 }
                             }
                         }
@@ -456,6 +435,44 @@ namespace ServerLicenta
             {
                 throw;
             }
+        }
+        #endregion
+
+        #region
+        private EmployeeDTO ConvertEmployeeToDTO(Employee employee)
+        {
+            // Se creaza o instanta de tipul EmployeeDTO
+            EmployeeDTO employeeDTO = new EmployeeDTO();
+            // Se creaza o instanta de tipul DeparmentDTO in care se vor pune datele departamentului unde lucreaza angajatul
+            DepartmentDTO departmentDTO = new DepartmentDTO();
+            // Se creaza o instanta de tipul JobDTO care va contine date despre job-ul angajatului
+            JobDTO jobDTO = new JobDTO();
+
+            employeeDTO.Department = departmentDTO;
+            employeeDTO.Job = jobDTO;
+
+            // Se iau detalile despre angajat
+            employeeDTO.EmployeeID = Convert.ToInt32(employee.EmployeeID);
+            employeeDTO.FirstName = employee.FirstName;
+            employeeDTO.LastName = employee.LastName;
+            employeeDTO.PNC = employee.PNC;
+            employeeDTO.Address = employee.Address;
+            employeeDTO.BirthDate = employee.BirthDate;
+            employeeDTO.Gender = employee.Gender;
+            employeeDTO.HireDate = employee.HireDate;
+            employeeDTO.Mail = employee.Mail;
+            employeeDTO.Nationality = employee.Nationality;
+            employeeDTO.PhoneNumber = employee.PhoneNumber;
+            employeeDTO.Studies = employee.Studies;
+            employeeDTO.Salary = employee.Salary;
+            employeeDTO.FileNumber = employee.FileNumber;
+            // Se ia departamentul si locatia departamentului unde lucreaza angajatul
+            employeeDTO.Department.DepartmentName = employee.Department.DepartmentName;
+            employeeDTO.Department.Location = employee.Department.Location;
+            // Se ia job-ul pe care acesta il are
+            employeeDTO.Job.JobTitle = employee.Job.JobTitle;
+
+            return employeeDTO;
         }
         #endregion
         #endregion
